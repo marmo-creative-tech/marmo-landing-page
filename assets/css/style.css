@@ -132,6 +132,10 @@ body {
 /* ===================================================================
    HEADER & NAVBAR
    =================================================================== */
+/* ===================================================================
+   HEADER & NAVBAR
+   Centered & fully responsive at 100%, 90% zoom, and all viewports
+   =================================================================== */
 .site-header {
   position: fixed;
   top: 0;
@@ -139,55 +143,49 @@ body {
   width: 100%;
   z-index: 100;
   transition: all var(--transition-normal);
-  padding: 18px 0;
-}
-
-.site-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 100;
-  transition: all var(--transition-normal);
-  padding: 16px 0;
-  background: rgba(18, 13, 49, 0.9);
+  padding: 14px 0;
+  background: rgba(18, 13, 49, 0.92);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   border-bottom: 1px solid rgba(255, 158, 27, 0.12);
 }
 
 .site-header .container {
-  max-width: 1360px;
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 24px;
 }
 
 .site-header.scrolled {
-  background: rgba(18, 13, 49, 0.95);
-  padding: 12px 0;
-  border-bottom: 1px solid rgba(255, 158, 27, 0.2);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  background: rgba(18, 13, 49, 0.96);
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(255, 158, 27, 0.22);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
 }
 
 .nav-wrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 24px;
+  gap: clamp(12px, 2vw, 32px);
+  width: 100%;
 }
 
 /* Brand Logo (Matches Image 1) */
 .brand-logo {
   display: flex;
   align-items: center;
-  gap: 14px;
+  gap: 12px;
   text-decoration: none;
   flex-shrink: 0;
 }
 
 .logo-mascot-wrap {
-  width: 48px;
-  height: 48px;
+  width: 44px;
+  height: 44px;
   background: #1C1542;
-  border-radius: 14px;
+  border-radius: 12px;
   border: 2px solid var(--color-orange);
   display: flex;
   align-items: center;
@@ -203,8 +201,8 @@ body {
 }
 
 .logo-mascot-img {
-  width: 92%;
-  height: 92%;
+  width: 90%;
+  height: 90%;
   object-fit: contain;
 }
 
@@ -215,7 +213,7 @@ body {
 
 .logo-brand-name {
   font-family: var(--font-display);
-  font-size: 24px;
+  font-size: 22px;
   line-height: 1;
   color: var(--color-orange);
   text-shadow: 2px 2px 0 #000;
@@ -224,19 +222,29 @@ body {
 
 .logo-brand-sub {
   font-family: var(--font-heading);
-  font-size: 9.5px;
+  font-size: 9px;
   font-weight: 800;
-  letter-spacing: 2px;
+  letter-spacing: 1.8px;
   text-transform: uppercase;
   color: #FFFFFF;
 }
 
-/* Navigation Links (Matches Image 1) */
+/* Navigation Links (Centered) */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1 1 auto;
+}
+
 .nav-links {
   display: flex;
   align-items: center;
-  gap: 30px;
+  justify-content: center;
+  gap: clamp(12px, 1.6vw, 24px);
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .nav-link {
@@ -244,10 +252,10 @@ body {
   text-decoration: none;
   font-family: var(--font-heading);
   font-weight: 700;
-  font-size: 15px;
+  font-size: 14px;
   transition: color var(--transition-fast);
   position: relative;
-  padding: 6px 0;
+  padding: 6px 2px;
   display: inline-block;
   white-space: nowrap;
 }
@@ -255,7 +263,7 @@ body {
 .nav-link::after {
   content: '';
   position: absolute;
-  bottom: -3px;
+  bottom: -2px;
   left: 0;
   width: 0%;
   height: 2.5px;
@@ -277,12 +285,20 @@ body {
   color: var(--color-orange);
 }
 
-/* Business Switcher Pills in Header (Matches Image 1 & 2) */
+/* Header Right Actions Group (Pill Switcher + CTA Button) */
+.header-actions-group {
+  display: flex;
+  align-items: center;
+  gap: clamp(10px, 1.2vw, 16px);
+  flex-shrink: 0;
+}
+
+/* Business Switcher Pills in Header */
 .business-toggle-pill {
   display: inline-flex;
   align-items: center;
   background: rgba(255, 255, 255, 0.06);
-  padding: 4px;
+  padding: 3px;
   border-radius: var(--radius-full);
   border: 1.5px solid rgba(255, 255, 255, 0.14);
   position: relative;
@@ -294,19 +310,20 @@ body {
   border: none;
   background: transparent;
   color: #FFFFFF;
-  padding: 7px 18px;
+  padding: 6px 14px;
   border-radius: var(--radius-full);
   font-family: var(--font-heading);
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 700;
   cursor: pointer;
   transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
   display: inline-flex;
   align-items: center;
-  gap: 8px;
+  gap: 6px;
   position: relative;
   z-index: 2;
   white-space: nowrap;
+  text-decoration: none;
 }
 
 .biz-btn.active.creative-btn {
@@ -326,20 +343,23 @@ body {
   background: rgba(255, 255, 255, 0.08);
 }
 
-/* Header CTA ("Let's Talk Magic" Outline Capsule - Matches Image 1) */
+/* Header CTA */
 .header-cta-btn {
   background: transparent;
-  border: 2px solid var(--color-orange);
+  border: 1.5px solid var(--color-orange);
   color: var(--color-orange);
-  padding: 8px 22px;
+  padding: 7px 18px;
   border-radius: var(--radius-full);
   font-family: var(--font-heading);
   font-weight: 700;
-  font-size: 14px;
+  font-size: 13px;
   text-decoration: none;
   transition: all var(--transition-fast);
   white-space: nowrap;
   flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .header-cta-btn:hover {
@@ -357,6 +377,7 @@ body {
   color: #FFF;
   font-size: 24px;
   cursor: pointer;
+  padding: 6px;
 }
 
 /* ===================================================================
@@ -2399,25 +2420,48 @@ body {
   }
 }
 
-@media (max-width: 768px) {
-  .nav-links, .business-toggle-pill, .header-cta-btn {
+@media (max-width: 1024px) {
+  nav {
+    display: none;
+  }
+  .nav-links, .header-actions-group {
     display: none;
   }
   .mobile-menu-toggle {
     display: block;
   }
-  .site-header.mobile-open .nav-links {
-    display: flex;
-    flex-direction: column;
+  .site-header.mobile-open nav {
+    display: block;
     position: absolute;
     top: 100%;
     left: 0;
     width: 100%;
-    background: #120D31;
-    padding: 24px;
-    border-bottom: 2px solid var(--color-orange);
-    gap: 18px;
   }
+  .site-header.mobile-open .nav-links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background: #120D31;
+    padding: 24px 24px 12px 24px;
+    border-bottom: none;
+    gap: 16px;
+  }
+  .site-header.mobile-open .header-actions-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+    position: absolute;
+    top: calc(100% + 250px);
+    left: 0;
+    width: 100%;
+    background: #120D31;
+    padding: 0 24px 24px 24px;
+    border-bottom: 2px solid var(--color-orange);
+  }
+}
+
+@media (max-width: 768px) {
   .hero-orbit-canvas-wrap {
     width: 600px;
     height: 600px;
