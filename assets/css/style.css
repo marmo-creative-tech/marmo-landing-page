@@ -2564,7 +2564,7 @@ nav {
   opacity: 1;
 }
 
-/* Avatar Wrapper & Platform (Square background with rounded 8 size on every edge) */
+/* Avatar Wrapper & Platform (Square Pure White Background with rounded 8 size on every edge) */
 .team-avatar-wrap {
   position: relative;
   width: 140px;
@@ -2574,44 +2574,32 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.06) 0%, rgba(18, 13, 49, 0.9) 100%);
-  border: 1.5px solid rgba(255, 255, 255, 0.14);
+  background: #FFFFFF !important;
+  border: 2px solid rgba(255, 255, 255, 0.95);
   border-radius: 8px !important;
   overflow: hidden;
-  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.35);
+  padding: 8px;
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.45);
   transition: all var(--transition-normal);
 }
 
 .team-card.flight-deck .team-avatar-wrap {
-  background: linear-gradient(135deg, rgba(239, 68, 68, 0.12) 0%, rgba(18, 13, 49, 0.9) 100%);
-  border-color: rgba(239, 68, 68, 0.35);
+  background: #FFFFFF !important;
+  border-color: #FECACA;
 }
 
 .team-card.creative-crew .team-avatar-wrap {
-  background: linear-gradient(135deg, rgba(255, 158, 27, 0.12) 0%, rgba(18, 13, 49, 0.9) 100%);
-  border-color: rgba(255, 158, 27, 0.35);
+  background: #FFFFFF !important;
+  border-color: #FED7AA;
 }
 
 .team-card.tech-crew .team-avatar-wrap {
-  background: linear-gradient(135deg, rgba(115, 83, 186, 0.16) 0%, rgba(18, 13, 49, 0.9) 100%);
-  border-color: rgba(115, 83, 186, 0.4);
+  background: #FFFFFF !important;
+  border-color: #DDD6FE;
 }
 
 .team-avatar-bg-glow {
-  position: absolute;
-  inset: 0;
-  border-radius: 8px !important;
-  background: radial-gradient(circle, rgba(255, 158, 27, 0.18) 0%, transparent 75%);
-  transition: all var(--transition-normal);
-  pointer-events: none;
-}
-
-.team-card.tech-crew .team-avatar-bg-glow {
-  background: radial-gradient(circle, rgba(115, 83, 186, 0.25) 0%, transparent 75%);
-}
-
-.team-card.flight-deck .team-avatar-bg-glow {
-  background: radial-gradient(circle, rgba(239, 68, 68, 0.2) 0%, transparent 75%);
+  display: none;
 }
 
 .team-card:hover .team-avatar-wrap {
@@ -2620,30 +2608,26 @@ nav {
 
 .team-card.flight-deck:hover .team-avatar-wrap {
   border-color: #EF4444;
-  box-shadow: 0 14px 30px rgba(239, 68, 68, 0.35);
+  box-shadow: 0 14px 32px rgba(239, 68, 68, 0.45);
 }
 
 .team-card.creative-crew:hover .team-avatar-wrap {
   border-color: var(--color-orange);
-  box-shadow: 0 14px 30px rgba(255, 158, 27, 0.4);
+  box-shadow: 0 14px 32px rgba(255, 158, 27, 0.5);
 }
 
 .team-card.tech-crew:hover .team-avatar-wrap {
-  border-color: var(--tech-purple-light);
-  box-shadow: 0 14px 30px rgba(115, 83, 186, 0.45);
-}
-
-.team-card:hover .team-avatar-bg-glow {
-  opacity: 1;
+  border-color: var(--tech-purple);
+  box-shadow: 0 14px 32px rgba(115, 83, 186, 0.55);
 }
 
 .team-avatar-img {
   position: relative;
-  max-width: 88%;
-  max-height: 88%;
+  max-width: 92%;
+  max-height: 92%;
   object-fit: contain;
-  border-radius: 8px !important;
-  filter: drop-shadow(0 6px 14px rgba(0, 0, 0, 0.4));
+  border-radius: 6px;
+  filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.16));
   transition: transform var(--transition-spring);
 }
 
