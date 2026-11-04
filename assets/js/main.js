@@ -385,47 +385,62 @@ function initMascotInteractivity() {
 
   if (!monkey || !stage) return;
 
-  // Multi-Character & Greeting Pose Roster
+  // Multi-Character & Greeting Pose Roster (Authentic Marmo People Crew)
   const mascotRoster = [
     {
-      img: "assets/images/sprites/mandrill_3d_standing.png",
-      alt: "Marmo Mandrill Mascot",
+      img: "assets/images/team/rifqy_pilot.png?v=2.9",
+      alt: "Rifqy - Marmo's Pilot",
       quote: "leave a mark. no fluff, just magic! ✨"
     },
     {
-      img: "assets/images/team/rifqy_pilot.png",
-      alt: "Captain Rifqy - Tech Pilot",
-      quote: "Captain Rifqy at the helm! Full throttle ahead! ✈️🕹️"
-    },
-    {
-      img: "assets/images/team/boy_copilot.png",
-      alt: "Co-Pilot Boy - Creative Direction",
+      img: "assets/images/team/boy_copilot.png?v=2.9",
+      alt: "Boy - Marmo's Co-Pilot",
       quote: "Co-Pilot Boy here! Navigating storytelling & magic! 🛫🌟"
     },
     {
-      img: "assets/images/team/khalf_creative.png",
-      alt: "Khalf Chameleon - Creative Showroom",
+      img: "assets/images/team/khalf_creative.png?v=2.9",
+      alt: "Khalf - Marmo Creative Co-Pilot",
       quote: "Welcome to Marmo Creative Showroom! 🎨🦎"
     },
     {
-      img: "assets/images/team/ega_tech.png",
-      alt: "Ega Tech Pilot - Systems Engineer",
+      img: "assets/images/team/ega_tech.png?v=2.9",
+      alt: "Ega - Tech Flight Attendant",
       quote: "Marmo Tech is ready to engineer your digital engine! 💻⚡"
     },
     {
-      img: "assets/images/sprites/mandrill_crouch_clean.png",
-      alt: "Action Mandrill",
-      quote: "Zero fluff, high impact! Ready to produce! 🎬⚡"
+      img: "assets/images/team/mevy_creative.png?v=2.9",
+      alt: "Mevy - Creative Flight Attendant",
+      quote: "Cinematic craft & high-conversion visuals! 🎬🔥"
     },
     {
-      img: "assets/images/team/fico_creative.png",
-      alt: "Fico Snake - Creative Division",
-      quote: "Smooth workflows & lightning-fast delivery! 🐍✨"
+      img: "assets/images/team/ical_creative.png?v=2.9",
+      alt: "Ical - Creative Flight Attendant",
+      quote: "Viral storytelling, no fluff, just impact! 🚀✨"
     },
     {
-      img: "assets/images/team/mevy_creative.png",
-      alt: "Mevy Beetle - Production Specialist",
-      quote: "Precision crafted! 10+ partners trust our craft! 🐞🔥"
+      img: "assets/images/team/fico_creative.png?v=2.9",
+      alt: "Fico - Creative Flight Attendant",
+      quote: "Smooth creative workflows & precision delivery! 🐍✨"
+    },
+    {
+      img: "assets/images/team/ceming_creative.png?v=2.9",
+      alt: "Ceming - Jr. Creative Flight Attendant",
+      quote: "Fresh ideas & dynamic video energy! 🌟🎬"
+    },
+    {
+      img: "assets/images/team/fadil_tech.png?v=2.9",
+      alt: "Fadil - Tech Flight Attendant",
+      quote: "Algorithmic pipelines & automated systems! ⚙️⚡"
+    },
+    {
+      img: "assets/images/team/diddy_tech.png?v=2.9",
+      alt: "Diddy - Tech Flight Attendant",
+      quote: "High-performance cloud & web architectures! 🌐💻"
+    },
+    {
+      img: "assets/images/team/widdie_tech.png?v=2.9",
+      alt: "Widdie - Tech Flight Attendant",
+      quote: "Enterprise fintech & scalable infrastructure! 🛡️⚡"
     }
   ];
 
