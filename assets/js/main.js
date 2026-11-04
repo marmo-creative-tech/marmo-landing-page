@@ -373,43 +373,132 @@ function initBusinessSwitcher() {
 }
 
 /* ===================================================================
-   5. HERO MASCOT (MANDRILL MONKEY) INTERACTIVITY & PARALLAX
+   5. HERO MASCOT & FLOATING GROUND INTERACTIVITY & PARALLAX
    =================================================================== */
 function initMascotInteractivity() {
-  const monkey = document.querySelector('.hero-monkey-character');
-  const bubble = document.querySelector('.mascot-speech-bubble');
-  const stage = document.querySelector('.hero-mascot-stage');
+  const monkey = document.getElementById('mainMascot') || document.querySelector('.hero-monkey-character');
+  const bubble = document.getElementById('mascotBubble') || document.querySelector('.mascot-speech-bubble');
+  const stage = document.getElementById('heroMascotStage') || document.querySelector('.hero-mascot-stage');
+  const parallaxWrap = document.getElementById('mascotParallaxWrap');
+  const unit = document.getElementById('mascotFloatingUnit');
+  const ground = document.getElementById('mascotGround');
 
   if (!monkey || !stage) return;
 
-  const quotes = [
-    "leave a mark. no fluff, just magic! ✨",
-    "Click the planets on my orbit to flick them! 🪐⚡",
-    "Welcome to Marmo Creative! 🚀",
-    "Marmo Tech is ready to build! 💻⚡",
-    "Zero fluff, high impact! 🎬",
-    "10+ Clients trust our craft! 🏆"
-  ];
-  let quoteIndex = 0;
-
-  // Click to change speech bubble
-  monkey.addEventListener('click', () => {
-    quoteIndex = (quoteIndex + 1) % quotes.length;
-    if (bubble) {
-      bubble.style.transform = 'scale(0.8)';
-      setTimeout(() => {
-        bubble.textContent = quotes[quoteIndex];
-        bubble.style.transform = 'scale(1)';
-      }, 150);
+  // Multi-Character & Greeting Pose Roster
+  const mascotRoster = [
+    {
+      img: "assets/images/sprites/mandrill_3d_standing.png",
+      alt: "Marmo Mandrill Mascot",
+      quote: "leave a mark. no fluff, just magic! ✨"
+    },
+    {
+      img: "assets/images/team/rifqy_pilot.png",
+      alt: "Captain Rifqy - Tech Pilot",
+      quote: "Captain Rifqy at the helm! Full throttle ahead! ✈️🕹️"
+    },
+    {
+      img: "assets/images/team/boy_copilot.png",
+      alt: "Co-Pilot Boy - Creative Direction",
+      quote: "Co-Pilot Boy here! Navigating storytelling & magic! 🛫🌟"
+    },
+    {
+      img: "assets/images/team/khalf_creative.png",
+      alt: "Khalf Chameleon - Creative Showroom",
+      quote: "Welcome to Marmo Creative Showroom! 🎨🦎"
+    },
+    {
+      img: "assets/images/team/ega_tech.png",
+      alt: "Ega Tech Pilot - Systems Engineer",
+      quote: "Marmo Tech is ready to engineer your digital engine! 💻⚡"
+    },
+    {
+      img: "assets/images/sprites/mandrill_crouch_clean.png",
+      alt: "Action Mandrill",
+      quote: "Zero fluff, high impact! Ready to produce! 🎬⚡"
+    },
+    {
+      img: "assets/images/team/fico_creative.png",
+      alt: "Fico Snake - Creative Division",
+      quote: "Smooth workflows & lightning-fast delivery! 🐍✨"
+    },
+    {
+      img: "assets/images/team/mevy_creative.png",
+      alt: "Mevy Beetle - Production Specialist",
+      quote: "Precision crafted! 10+ partners trust our craft! 🐞🔥"
     }
-    // Playful bounce
-    monkey.style.transform = 'scale(1.12) rotate(4deg)';
-    setTimeout(() => {
-      monkey.style.transform = '';
-    }, 400);
+  ];
+
+  // Preload all character images so switches are instantaneous with zero flicker
+  mascotRoster.forEach(item => {
+    const preload = new Image();
+    preload.src = item.img;
   });
 
-  // Mouse Parallax on Stage
+  let currentIndex = 0;
+  let isTransitioning = false;
+
+  function switchMascot() {
+    if (isTransitioning) return;
+    isTransitioning = true;
+
+    currentIndex = (currentIndex + 1) % mascotRoster.length;
+    const nextItem = mascotRoster[currentIndex];
+
+    // Animate speech bubble pop-out
+    if (bubble) {
+      bubble.style.transform = 'scale(0.8)';
+      bubble.style.opacity = '0.5';
+    }
+
+    // Animate character pop-out
+    monkey.classList.add('switching-out');
+
+    // Pulse the white floating ground
+    if (ground) {
+      ground.classList.add('ripple-pulse');
+      setTimeout(() => ground.classList.remove('ripple-pulse'), 450);
+    }
+
+    setTimeout(() => {
+      // Update character image and speech greeting
+      monkey.src = nextItem.img;
+      monkey.alt = nextItem.alt;
+
+      if (bubble) {
+        bubble.textContent = nextItem.quote;
+        bubble.style.transform = 'scale(1.08)';
+        bubble.style.opacity = '1';
+        setTimeout(() => {
+          bubble.style.transform = '';
+        }, 220);
+      }
+
+      monkey.classList.remove('switching-out');
+      monkey.classList.add('switching-in');
+
+      setTimeout(() => {
+        monkey.classList.remove('switching-in');
+        isTransitioning = false;
+      }, 300);
+    }, 160);
+  }
+
+  // Click handler on character image, unit, and speech bubble
+  if (unit) {
+    unit.addEventListener('click', switchMascot);
+  } else {
+    monkey.addEventListener('click', switchMascot);
+  }
+
+  if (bubble) {
+    bubble.addEventListener('click', (e) => {
+      e.stopPropagation();
+      switchMascot();
+    });
+  }
+
+  // Mouse Parallax on Stage (moves parallax wrapper smoothly without disturbing floating unit)
   stage.addEventListener('mousemove', (e) => {
     const rect = stage.getBoundingClientRect();
     const x = e.clientX - rect.left - rect.width / 2;
@@ -418,11 +507,13 @@ function initMascotInteractivity() {
     const moveX = (x / rect.width) * 16;
     const moveY = (y / rect.height) * 12;
 
-    monkey.style.transform = `translate(${moveX}px, ${moveY}px) rotate(${moveX * 0.2}deg)`;
+    const target = parallaxWrap || monkey;
+    target.style.transform = `translate(${moveX}px, ${moveY}px) rotate(${moveX * 0.15}deg)`;
   });
 
   stage.addEventListener('mouseleave', () => {
-    monkey.style.transform = '';
+    const target = parallaxWrap || monkey;
+    target.style.transform = '';
   });
 }
 

@@ -10,7 +10,7 @@
   <link rel="icon" type="image/png" href="assets/images/sprites/marmo_icon_new.png">
 
   <!-- Core Stylesheet -->
-  <link rel="stylesheet" href="assets/css/style.css?v=2.7">
+  <link rel="stylesheet" href="assets/css/style.css?v=2.8">
 
   <!-- Font Awesome Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -139,13 +139,29 @@
         A full-throttle production house blending cinematic company profiles, viral video editing, boundary-pushing graphic design, and intelligent digital systems.
       </p>
 
-      <!-- The Main Character: Mandrill Monkey Mascot with Speech Bubble & Parallax -->
-      <div class="hero-mascot-stage">
-        <div class="mascot-speech-bubble" id="mascotBubble">
+      <!-- The Main Character: Interactive Character on Floating White Ground -->
+      <div class="hero-mascot-stage" id="heroMascotStage">
+        <!-- Interactive Speech Bubble -->
+        <div class="mascot-speech-bubble" id="mascotBubble" title="Click me or character to change!">
           leave a mark. no fluff, just magic! ✨
         </div>
-        <div class="mascot-glow-platform"></div>
-        <img src="assets/images/sprites/mandrill_3d_standing.png" alt="Marmo Mandrill Mascot" class="hero-monkey-character" id="mainMascot">
+
+        <!-- Parallax Wrapper for smooth mouse interaction -->
+        <div class="mascot-parallax-wrap" id="mascotParallaxWrap">
+          <!-- Floating Unit (Character & Floating White Ground stay anchored together) -->
+          <div class="mascot-floating-unit" id="mascotFloatingUnit" title="Click character to switch!">
+            <img src="assets/images/sprites/mandrill_3d_standing.png" alt="Marmo Mandrill Mascot" class="hero-monkey-character" id="mainMascot">
+            
+            <!-- Floating White Ground Platform under character feet -->
+            <div class="mascot-floating-ground" id="mascotGround">
+              <div class="floating-ground-disc">
+                <div class="ground-foot-contact"></div>
+              </div>
+              <div class="floating-ground-glow"></div>
+              <div class="floating-ground-shadow"></div>
+            </div>
+          </div>
+        </div>
       </div>
 
       <!-- 2 Hero CTA Buttons as Requested: Marmo Creative! and Marmo Tech! -->
@@ -1060,6 +1076,6 @@
   </div>
 
   <!-- Main JavaScript File -->
-  <script src="assets/js/main.js?v=2.4"></script>
+  <script src="assets/js/main.js?v=2.8"></script>
 </body>
 </html>
