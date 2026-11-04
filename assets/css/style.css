@@ -1917,7 +1917,9 @@ nav {
 
 .tech-logo-img {
   max-width: 100%;
+  max-height: 320px;
   height: auto;
+  object-fit: contain;
   filter: drop-shadow(0 10px 25px rgba(115, 83, 186, 0.5));
 }
 
