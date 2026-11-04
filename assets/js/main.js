@@ -515,14 +515,14 @@ const portfolioData = {
     deliverables: ["Product spotlight reels (HP Pavilion X360 Yoga)", "Viral office comedy skits & trend-jacking", "In-app 'Keranjang Kuning' conversion hooks", "Consistent brand tone and high-energy pacing"]
   },
   bca: {
-    title: "BCA Omnichannel Promotional Designs",
+    title: "BCA Graphic Design and Motion",
     year: "2024",
-    format: "Digital Ad Creatives & App Banners",
-    category: "Graphic Design & Campaigns",
+    format: "Digital Ad Creatives & Motion Graphics",
+    category: "Graphic Design & Motion",
     image: "assets/images/portfolio/bca_logo.png",
     client: "Bank Central Asia (BCA)",
-    desc: "These BCA designs are intended for use on WhatsApp, email, the myBCA app, and their website. They feature reminders, promotional content, and campaign materials.",
-    deliverables: ["Flazz BCA Rp 1.000.000 cashback campaign visual", "Diskon 5% Supermarket Credit Card creatives", "WhatsApp blast banners & direct response layouts", "High-conversion myBCA mobile application hero assets"]
+    desc: "Digital ad creatives, motion design, and promotional materials crafted for WhatsApp blasts, email campaigns, the myBCA app, and digital marketing channels.",
+    deliverables: ["Flazz BCA Rp 1.000.000 cashback campaign visual", "Diskon 5% Supermarket Credit Card creatives", "WhatsApp blast motion banners & direct response layouts", "High-conversion myBCA mobile application hero assets"]
   },
   summarecon: {
     title: "Summarecon Group Culture Videos",
@@ -534,15 +534,50 @@ const portfolioData = {
     desc: "Summarecon Career gives insight into their internal activities while also posting job vacancies for job seekers. The videos were recorded and edited for use on their social media.",
     deliverables: ["Internal sports activities & team building coverage", "17 Agustus Independence Day flag ceremony reel", "Food festival & corporate life insights", "Interactive job fair & recruitment vacancy video clips"]
   },
-  fortius_web: {
-    title: "Fortius Web UI/UX Experience",
+  cpopc_profile: {
+    title: "CPOPC Video Company profile and Social Media Post",
     year: "2024",
-    format: "Web Platform Design & Guides",
-    category: "Web & UI/UX",
+    format: "Corporate Film & Social Campaign",
+    category: "Company Profile & Video",
+    image: "assets/images/clients/cpopc.svg",
+    client: "Council of Palm oil Producing Countries (CPOPC)",
+    desc: "CPOPC is an intergovernmental organization that promotes, develops, and establishes cooperation in palm oil production. We crafted their official corporate video profile and accompanying social media campaign, highlighting sustainable agriculture practices, economic impact, and international leadership.",
+    deliverables: [
+      "Cinematic 4K corporate video profile with international voiceover",
+      "Executive interview staging & global supply chain narrative",
+      "Multi-platform social media post pack and teaser reels",
+      "Digital brochure and infographics for diplomatic summits"
+    ]
+  },
+  cpopc_social: {
+    title: "CPOPC Short and Long social Media post",
+    year: "2024-2025",
+    format: "Short & Long Video Content",
+    category: "Video & Social Media",
+    image: "assets/images/clients/cpopc.svg",
+    client: "Council of Palm oil Producing Countries (CPOPC)",
+    desc: "A comprehensive digital communication series featuring dynamic short-form reels for fast engagement and deep-dive long-form video content educating global stakeholders on environmental sustainability standards, smallholder farmer livelihoods, and fair trade policies.",
+    deliverables: [
+      "High-retention 9:16 vertical short reels for Instagram & TikTok",
+      "In-depth 16:9 documentary-style long-form video essays",
+      "Animated kinetic data graphics & statistical charts",
+      "Multilingual captions and stakeholder-ready presentation edits"
+    ]
+  },
+  fortius_web: {
+    title: "Fortius WEB HR Platform UI",
+    year: "2024",
+    format: "Enterprise Web App & SaaS Architecture",
+    category: "Web & UI/UX Systems",
     image: "assets/images/portfolio/fortius_web_preview.svg",
     client: "Fortius HRIS",
-    desc: "Fortius helps companies optimize their human resource management. These designs will be implemented on their website to describe their services.",
-    deliverables: ["Web application and mobile app user guide design", "Employee attendance & payroll accuracy dashboard UI", "Maintenance & update alert illustration kit", "Clean responsive SaaS product marketing pages"]
+    desc: "Fortius helps companies optimize and digitize their entire human resource workflow. We architected the web application user interface, onboarding guides, and interactive dashboard design to give HR managers effortless control over employee scheduling, compliance, and automated payroll operations.",
+    deliverables: [
+      "Web application and mobile app SaaS interface system",
+      "Employee attendance & real-time payroll accuracy dashboard UI",
+      "Interactive onboarding flows and feature guide design",
+      "Maintenance & update alert illustration kit with clean responsive SaaS product marketing pages"
+    ]
   },
   segari: {
     title: "Segari Mascot & Packaging Ecosystem",
