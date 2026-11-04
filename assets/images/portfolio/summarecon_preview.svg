@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 320" fill="none">
+  <defs>
+    <linearGradient id="summaBg" x1="0" y1="0" x2="480" y2="320" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#191544" />
+      <stop offset="100%" stop-color="#0E0B28" />
+    </linearGradient>
+    <linearGradient id="summaOrange" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#EA580C" />
+      <stop offset="100%" stop-color="#C2410C" />
+    </linearGradient>
+  </defs>
+
+  <rect width="480" height="320" rx="16" fill="url(#summaBg)" />
+
+  <g transform="translate(45, 25)">
+    <!-- Header banner -->
+    <rect width="390" height="36" rx="8" fill="url(#summaOrange)" stroke="#FDBA74" stroke-width="1.5" />
+    <text x="18" y="24" fill="#FFFFFF" font-family="'Lilita One', sans-serif" font-size="16">Summarecon Career</text>
+    <text x="210" y="23" fill="#FED7AA" font-family="'Outfit', sans-serif" font-size="9" font-weight="600">Company Culture &amp; Recruitment Videos</text>
+
+    <!-- 6 Video Reel Grid items -->
+    <!-- Card 1: Sports Activity -->
+    <g transform="translate(0, 48)">
+      <rect width="120" height="82" rx="8" fill="#1E194D" stroke="#EA580C" stroke-width="1.5" />
+      <rect x="8" y="8" width="104" height="48" rx="5" fill="#431407" />
+      <circle cx="60" cy="32" r="12" fill="#F97316" opacity="0.6" />
+      <text x="12" y="68" fill="#FED7AA" font-family="'Outfit', sans-serif" font-size="8" font-weight="bold">🏀 SPORTS ACTIVITY</text>
+    </g>
+
+    <!-- Card 2: Independence Day 17 Agustus -->
+    <g transform="translate(135, 48)">
+      <rect width="120" height="82" rx="8" fill="#1E194D" stroke="#EF4444" stroke-width="1.5" />
+      <rect x="8" y="8" width="104" height="48" rx="5" fill="#7F1D1D" />
+      <circle cx="60" cy="32" r="12" fill="#EF4444" opacity="0.6" />
+      <text x="12" y="68" fill="#FCA5A5" font-family="'Outfit', sans-serif" font-size="8" font-weight="bold">🇮🇩 UPACARA BENDERA</text>
+    </g>
+
+    <!-- Card 3: Food Festival -->
+    <g transform="translate(270, 48)">
+      <rect width="120" height="82" rx="8" fill="#1E194D" stroke="#F59E0B" stroke-width="1.5" />
+      <rect x="8" y="8" width="104" height="48" rx="5" fill="#78350F" />
+      <circle cx="60" cy="32" r="12" fill="#F59E0B" opacity="0.6" />
+      <text x="12" y="68" fill="#FDE68A" font-family="'Outfit', sans-serif" font-size="8" font-weight="bold">🍜 FOOD FESTIVAL</text>
+    </g>
+
+    <!-- Bottom Row -->
+    <!-- Card 4: First Day Onboarding -->
+    <g transform="translate(0, 140)">
+      <rect width="120" height="82" rx="8" fill="#1E194D" stroke="#06B6D4" stroke-width="1.5" />
+      <rect x="8" y="8" width="104" height="48" rx="5" fill="#164E63" />
+      <circle cx="60" cy="32" r="12" fill="#06B6D4" opacity="0.6" />
+      <text x="12" y="68" fill="#A5F3FC" font-family="'Outfit', sans-serif" font-size="8" font-weight="bold">💼 FIRST DAY AT WORK</text>
+    </g>
+
+    <!-- Card 5: Table Tennis Tournament -->
+    <g transform="translate(135, 140)">
+      <rect width="120" height="82" rx="8" fill="#1E194D" stroke="#10B981" stroke-width="1.5" />
+      <rect x="8" y="8" width="104" height="48" rx="5" fill="#064E3B" />
+      <circle cx="60" cy="32" r="12" fill="#10B981" opacity="0.6" />
+      <text x="12" y="68" fill="#A7F3D0" font-family="'Outfit', sans-serif" font-size="8" font-weight="bold">🏓 TABLE TENNIS TOURNEY</text>
+    </g>
+
+    <!-- Card 6: Job Fair & Recruitment -->
+    <g transform="translate(270, 140)">
+      <rect width="120" height="82" rx="8" fill="#1E194D" stroke="#8B5CF6" stroke-width="1.5" />
+      <rect x="8" y="8" width="104" height="48" rx="5" fill="#4C1D95" />
+      <circle cx="60" cy="32" r="12" fill="#8B5CF6" opacity="0.6" />
+      <text x="12" y="68" fill="#DDD6FE" font-family="'Outfit', sans-serif" font-size="8" font-weight="bold">🚀 BUILD CAREER WITH US</text>
+    </g>
+  </g>
+
+  <!-- Tag Pill -->
+  <g transform="translate(24, 275)">
+    <rect width="130" height="28" rx="14" fill="#EA580C" stroke="#000000" stroke-width="1.5" />
+    <text x="14" y="18" fill="#FFFFFF" font-family="'Lilita One', sans-serif" font-size="12">SUMMARECON · 2024</text>
+  </g>
+</svg>

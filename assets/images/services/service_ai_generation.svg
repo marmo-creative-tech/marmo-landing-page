@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" fill="none">
+  <defs>
+    <linearGradient id="aiBg" x1="0" y1="0" x2="400" y2="240" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#28205C" />
+      <stop offset="100%" stop-color="#120E2E" />
+    </linearGradient>
+    <linearGradient id="aiSphere" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FF9E1B" />
+      <stop offset="40%" stop-color="#D946EF" />
+      <stop offset="100%" stop-color="#06B6D4" />
+    </linearGradient>
+    <filter id="aiGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <rect width="400" height="240" rx="16" fill="url(#aiBg)" />
+  <circle cx="200" cy="115" r="85" fill="#D946EF" fill-opacity="0.12" filter="url(#aiGlow)" />
+
+  <!-- Multiple Orbit Rings with Quantum Nodes -->
+  <ellipse cx="200" cy="115" rx="155" ry="65" stroke="#FF9E1B" stroke-opacity="0.3" stroke-dasharray="4 6" />
+  <ellipse cx="200" cy="115" rx="110" ry="45" stroke="#06B6D4" stroke-opacity="0.4" />
+  <ellipse cx="200" cy="115" rx="60" ry="85" stroke="#D946EF" stroke-opacity="0.35" transform="rotate(30 200 115)" />
+
+  <!-- Central Holographic AI Core / Entity -->
+  <circle cx="200" cy="115" r="42" fill="url(#aiSphere)" stroke="#FFFFFF" stroke-width="2" />
+  <ellipse cx="200" cy="115" rx="42" ry="16" fill="none" stroke="#FFFFFF" stroke-width="1.5" opacity="0.6" />
+  <ellipse cx="200" cy="115" rx="16" ry="42" fill="none" stroke="#FFFFFF" stroke-width="1.5" opacity="0.6" />
+  <circle cx="190" cy="105" r="6" fill="#FFFFFF" opacity="0.8" />
+
+  <!-- Prompt Command Bar Floating Overlay -->
+  <g transform="translate(60, 160)">
+    <rect x="0" y="0" width="280" height="38" rx="10" fill="#151133" stroke="#FF9E1B" stroke-width="2" />
+    <!-- AI Sparkle Icon -->
+    <path d="M22 13 L24 17 L28 19 L24 21 L22 25 L20 21 L16 19 L20 17 Z" fill="#FFCA3A" />
+    <path d="M28 11 L29 13 L31 14 L29 15 L28 17 L27 15 L25 14 L27 13 Z" fill="#06B6D4" />
+    <!-- Text Prompt -->
+    <text x="36" y="24" fill="#E2E8F0" font-family="'Outfit', sans-serif" font-size="11" font-weight="500">/imagine: cosmic mandrill in cyberpunk galaxy</text>
+    <rect x="272" y="14" width="2" height="14" fill="#FF9E1B" />
+  </g>
+
+  <!-- Floating Neural Nodes -->
+  <g stroke="#06B6D4" stroke-width="1" opacity="0.7">
+    <line x1="70" y1="65" x2="110" y2="85" />
+    <line x1="110" y1="85" x2="158" y2="105" />
+    <line x1="242" y1="105" x2="290" y2="80" />
+    <line x1="290" y1="80" x2="330" y2="95" />
+  </g>
+  <circle cx="70" cy="65" r="4" fill="#FF9E1B" />
+  <circle cx="110" cy="85" r="5" fill="#06B6D4" />
+  <circle cx="290" cy="80" r="5" fill="#D946EF" />
+  <circle cx="330" cy="95" r="4" fill="#FFCA3A" />
+
+  <!-- Top Magic Badge -->
+  <g transform="translate(150, 22)">
+    <rect x="0" y="0" width="100" height="24" rx="12" fill="#1E194D" stroke="#D946EF" stroke-width="1.5" />
+    <text x="18" y="16" fill="#FFDE59" font-family="'Outfit', sans-serif" font-size="9" font-weight="700">✦ GENERATIVE AI</text>
+  </g>
+</svg>

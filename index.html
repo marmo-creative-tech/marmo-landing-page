@@ -1,0 +1,995 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marmo — Production House | Marmo Creative! &amp; Marmo Tech!</title>
+  <meta name="description" content="Marmo Production House. Leave a mark. No fluff, just magic. Explore Marmo Creative! and Marmo Tech! for high-impact video, graphic design, and digital tech solutions.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/sprites/marmo_icon_new.png">
+
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+  <!-- ===================================================================
+       HEADER & NAVIGATION BAR
+       Links: Home, About Us, Contact Us, Project
+       =================================================================== -->
+  <header class="site-header" id="siteHeader">
+    <div class="container nav-wrapper">
+      <!-- Logo: MARMO with Mandrill Mascot (Matches Image 1 & 2) -->
+      <a href="#home" class="brand-logo" aria-label="Marmo Production House">
+        <div class="logo-mascot-wrap">
+          <img src="assets/images/sprites/marmo_icon_new.png" alt="Marmo Mascot" class="logo-mascot-img">
+        </div>
+        <div class="logo-text-group">
+          <span class="logo-brand-name">MARMO</span>
+          <span class="logo-brand-sub">PRODUCTION HOUSE</span>
+        </div>
+      </a>
+
+      <!-- Navigation Links -->
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About Us</a></li>
+          <li><a href="#services" class="nav-link">What We Serve</a></li>
+          <li><a href="#team" class="nav-link">Marmo People!</a></li>
+          <li><a href="creative.html" class="nav-link" style="color: var(--color-orange);">Marmo Creative!</a></li>
+          <li><a href="tech.html" class="nav-link" style="color: var(--tech-purple-light);">Marmo Tech!</a></li>
+          <li><a href="#contact" class="nav-link">Contact Us</a></li>
+        </ul>
+      </nav>
+
+      <!-- Business Switcher Pill in Header (Links to Dedicated Creative & Tech Pages) -->
+      <div class="business-toggle-pill" id="bizTogglePill">
+        <a href="creative.html" class="biz-btn creative-btn" id="btnMarmoCreative" aria-label="Explore Marmo Creative Showroom">
+          <span>🎨</span> Marmo Creative!
+        </a>
+        <a href="tech.html" class="biz-btn tech-btn" id="btnMarmoTech" aria-label="Explore Marmo Tech Division">
+          <span style="color: #FFC72C;">⚡</span> Marmo Tech!
+        </a>
+      </div>
+
+      <!-- Header CTA -->
+      <a href="#contact" class="header-cta-btn">Let's Talk Magic</a>
+
+      <!-- Mobile Hamburger Button -->
+      <button class="mobile-menu-toggle" aria-label="Toggle Navigation Menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===================================================================
+       HERO SECTION (HOME)
+       - Shows Marmo Character (Mandrill Monkey)
+       - Interactive Planet Orbit Flick Mini-Game (Click round circles to flick!)
+       - 2 CTAs: Marmo Creative! & Marmo Tech!
+       - Scroll down planet orbit animation
+       =================================================================== -->
+  <section class="hero-section" id="home">
+    <!-- Planetary Orbit Track & Satellites (Clickable Planet Flick Game) -->
+    <div class="hero-orbit-canvas-wrap" id="orbitCanvasWrap">
+      <!-- Ring 1 (Inner Orbit with Solar Orange Planet) -->
+      <div class="hero-orbit-ring orbit-ring-1" id="orbitRing1" data-radius="240">
+        <div class="orbit-planet planet-orange" id="planetOrange" data-ring="1" data-speed="0.008" title="Click to Flick Solar Planet!">
+          <div class="planet-glow-core"></div>
+          <span class="planet-hint">Flick Me! ⚡</span>
+        </div>
+      </div>
+
+      <!-- Ring 2 (Middle Orbit with Purple & Gold Planets) -->
+      <div class="hero-orbit-ring orbit-ring-2" id="orbitRing2" data-radius="370">
+        <div class="orbit-planet planet-purple" id="planetPurple" data-ring="2" data-speed="-0.006" title="Click to Flick Tech Planet!">
+          <div class="planet-glow-core"></div>
+          <span class="planet-hint">Flick Me! ⚡</span>
+        </div>
+        <div class="orbit-planet planet-gold" id="planetGold" data-ring="2" data-speed="-0.006" data-offset="3.14" title="Click to Flick Nova Star!">
+          <div class="planet-glow-core"></div>
+          <span class="planet-hint">Flick Me! ⚡</span>
+        </div>
+      </div>
+
+      <!-- Ring 3 (Outer Orbit with Cyan Core Planet) -->
+      <div class="hero-orbit-ring orbit-ring-3" id="orbitRing3" data-radius="490">
+        <div class="orbit-planet planet-cyan" id="planetCyan" data-ring="3" data-speed="0.004" title="Click to Flick Cyan Core!">
+          <div class="planet-glow-core"></div>
+          <span class="planet-hint">Flick Me! ⚡</span>
+        </div>
+      </div>
+
+      <!-- Container for dynamic stardust particles & flick popups -->
+      <div id="orbitParticlesContainer"></div>
+    </div>
+
+    <!-- Hero Center Content -->
+    <div class="container hero-content">
+      <!-- Orbit Flick Arcade Mini-Game Badge -->
+      <div class="orbit-arcade-hud" id="orbitArcadeHud" title="Click any planet on the orbit to flick it!">
+        <i class="fa-solid fa-gamepad hud-game-icon"></i>
+        <span class="hud-label">Orbit Flick Game:</span>
+        <span class="hud-stat-badge" id="hudSpeedBadge">1.0x Speed</span>
+        <span class="hud-stat-badge" id="hudFlicksBadge">0 Flicks</span>
+      </div>
+
+      <!-- Pill Badge -->
+      <div class="hero-badge-pill">
+        <span class="badge-sparkle">✦</span>
+        <span class="badge-text" id="heroBadgeText">CREATIVE PRODUCTION &amp; TECH STUDIO</span>
+        <span class="badge-sparkle">✦</span>
+      </div>
+
+      <!-- Hero Headline with Comic 3D Extrusion -->
+      <h1 class="hero-title">
+        WE ARE <span class="title-marmo">MARMO</span>
+      </h1>
+
+      <!-- Slogan from PDF Page 1 -->
+      <p class="hero-subtitle-slogan">
+        <span class="highlight">leave a mark.</span> no fluff, just magic.
+      </p>
+
+      <p class="hero-desc">
+        A full-throttle production house blending cinematic company profiles, viral video editing, boundary-pushing graphic design, and intelligent digital systems.
+      </p>
+
+      <!-- The Main Character: Mandrill Monkey Mascot with Speech Bubble & Parallax -->
+      <div class="hero-mascot-stage">
+        <div class="mascot-speech-bubble" id="mascotBubble">
+          leave a mark. no fluff, just magic! ✨
+        </div>
+        <div class="mascot-glow-platform"></div>
+        <img src="assets/images/sprites/mandrill_3d_standing.png" alt="Marmo Mandrill Mascot" class="hero-monkey-character" id="mainMascot">
+      </div>
+
+      <!-- 2 Hero CTA Buttons as Requested: Marmo Creative! and Marmo Tech! -->
+      <div class="hero-cta-group">
+        <!-- 1. Marmo Creative! CTA: Navigates to dedicated Marmo Creative showroom page -->
+        <a href="creative.html" class="cta-btn-creative">
+          <span class="cta-icon">🎨</span>
+          <span>Marmo Creative!</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+
+        <!-- 2. Marmo Tech! CTA: Navigates to dedicated Marmo Tech page -->
+        <a href="tech.html" class="cta-btn-tech">
+          <span class="cta-icon">⚡</span>
+          <span>Marmo Tech!</span>
+          <i class="fa-solid fa-bolt"></i>
+        </a>
+      </div>
+
+      <!-- Scroll Down Indicator: Animated Planet Orbit (Not Static!) -->
+      <a href="#services" class="scroll-orbit-indicator-wrap" aria-label="Scroll down to What Marmo Serve">
+        <div class="scroll-orbit-system">
+          <div class="orbit-sun"></div>
+          <div class="orbit-planetary-path">
+            <div class="orbiting-planet-dot"></div>
+          </div>
+        </div>
+        <span class="scroll-text">
+          <span>Scroll Orbit</span>
+          <i class="fa-solid fa-chevron-down scroll-arrow-down"></i>
+        </span>
+      </a>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       SECTION: ABOUT US (BRIEF MARMO STORY)
+       =================================================================== -->
+  <section class="section-padding" id="about" style="background: rgba(20, 15, 52, 0.5);">
+    <div class="container">
+      <div class="section-header-center">
+        <div class="section-tag-pill">
+          <span class="section-tag-text">✦ WHO WE ARE</span>
+        </div>
+        <h2 class="section-title">THE STORY BEHIND <span class="text-orange">MARMO</span></h2>
+        <p class="section-desc">
+          Born from a passion for raw creativity and cutting-edge execution. We help forward-thinking brands stand out, captivate audiences, and scale without friction.
+        </p>
+      </div>
+
+      <!-- Story Behind Marmo Information Cards (Multi-Colored Pulse-Out on Hover) -->
+      <div class="story-cards-grid">
+        <!-- Story Card 1: Solar Orange Pulse -->
+        <div class="story-card story-card-orange">
+          <div class="story-orbit-pulse-emitter">
+            <div class="story-pulse-ring ring-1"></div>
+            <div class="story-pulse-ring ring-2"></div>
+            <div class="story-pulse-ring ring-3"></div>
+          </div>
+          <div class="story-icon-wrap">
+            <i class="fa-solid fa-wand-magic-sparkles"></i>
+          </div>
+          <h3 class="story-card-title">Zero Fluff Guarantee</h3>
+          <p class="story-card-desc">
+            We skip the bureaucratic overhead. Every frame, asset, and code snippet is built with intention, speed, and real business impact.
+          </p>
+          <div class="story-card-accent-pill">✦ Magic &amp; Speed</div>
+        </div>
+
+        <!-- Story Card 2: Electric Purple Pulse -->
+        <div class="story-card story-card-purple">
+          <div class="story-orbit-pulse-emitter">
+            <div class="story-pulse-ring ring-1"></div>
+            <div class="story-pulse-ring ring-2"></div>
+            <div class="story-pulse-ring ring-3"></div>
+          </div>
+          <div class="story-icon-wrap">
+            <i class="fa-solid fa-cubes-stacked"></i>
+          </div>
+          <h3 class="story-card-title">Dual Creative &amp; Tech DNA</h3>
+          <p class="story-card-desc">
+            From high-converting TikTok reels and corporate booklets to enterprise web applications, we bridge design artistry with technical precision.
+          </p>
+          <div class="story-card-accent-pill">⚡ Design + Tech</div>
+        </div>
+
+        <!-- Story Card 3: Cyber Cyan Pulse -->
+        <div class="story-card story-card-cyan">
+          <div class="story-orbit-pulse-emitter">
+            <div class="story-pulse-ring ring-1"></div>
+            <div class="story-pulse-ring ring-2"></div>
+            <div class="story-pulse-ring ring-3"></div>
+          </div>
+          <div class="story-icon-wrap">
+            <i class="fa-solid fa-heart-pulse"></i>
+          </div>
+          <h3 class="story-card-title">End-to-End Partnership</h3>
+          <p class="story-card-desc">
+            Trusted by Indonesia's top tier enterprises including BCA, Summarecon, Esco, and Segari with 100% project dedication.
+          </p>
+          <div class="story-card-accent-pill">★ 100% Dedicated</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       SECOND SECTION: WHAT MARMO SERVE
+       Format: Card with image + space under image for sub-info
+       Hover: Pulses out the card with planet orbit effect
+       Cards:
+       1. Video and digital Company profile
+       2. Graphic Design
+       3. Long and Short Video editing
+       4. AI Imaginary Generation
+       =================================================================== -->
+  <section class="section-padding services-section" id="services">
+    <div class="container">
+      <!-- Section Header -->
+      <div class="section-header-center">
+        <div class="section-tag-pill">
+          <span class="section-tag-text">✦ WHAT WE SERVE</span>
+        </div>
+        <h2 class="section-title">WHAT <span class="text-orange">MARMO</span> SERVES</h2>
+        <p class="section-desc">
+          Crafted to give your brand an unfair advantage. No bloated fluff, just pure creative and digital horsepower.
+        </p>
+      </div>
+
+      <!-- Services 5 Cards Grid -->
+      <div class="services-grid">
+        <!-- CARD 1: Video and Digital Company Profile -->
+        <div class="service-card" data-service="1">
+          <div class="card-orbit-pulse-emitter">
+            <div class="pulse-ring pulse-ring-1"></div>
+            <div class="pulse-ring pulse-ring-2"></div>
+            <div class="pulse-ring pulse-ring-3"></div>
+          </div>
+
+          <div class="card-image-wrapper">
+            <span class="card-floating-badge">4K CINEMA</span>
+            <img src="assets/images/services/service_video_profile.svg" alt="Video and digital Company profile" class="card-preview-svg">
+          </div>
+
+          <div class="card-body-content">
+            <span class="service-card-number">01 / CORPORATE FILM</span>
+            <h3 class="service-card-title">Video &amp; Digital Company Profile</h3>
+            <p class="service-card-desc">
+              Ditch the snooze-fest corporate slides. We craft slick, cinematic films and interactive booklets that put your facilities, leadership, and bold vision in the spotlight so clients actually pay attention.
+            </p>
+            <div class="card-feature-pills">
+              <span class="feat-pill">Facility Tours</span>
+              <span class="feat-pill">Executive Stories</span>
+              <span class="feat-pill">Drone 4K Shoots</span>
+              <span class="feat-pill">Digital Booklets</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD 2: Graphic Design -->
+        <div class="service-card" data-service="2">
+          <div class="card-orbit-pulse-emitter">
+            <div class="pulse-ring pulse-ring-1"></div>
+            <div class="pulse-ring pulse-ring-2"></div>
+            <div class="pulse-ring pulse-ring-3"></div>
+          </div>
+
+          <div class="card-image-wrapper">
+            <span class="card-floating-badge">IDENTITY &amp; BRAND</span>
+            <img src="assets/images/services/service_graphic_design.svg" alt="Graphic Design" class="card-preview-svg">
+          </div>
+
+          <div class="card-body-content">
+            <span class="service-card-number">02 / VISUAL IDENTITY</span>
+            <h3 class="service-card-title">Graphic Design &amp; Visual Identity</h3>
+            <p class="service-card-desc">
+              Visuals that slap. We build distinct brand identities, killer packaging, mascot characters, and omnichannel promo campaigns that make your business impossible to scroll past or ignore.
+            </p>
+            <div class="card-feature-pills">
+              <span class="feat-pill">Brand Guidelines</span>
+              <span class="feat-pill">Packaging &amp; Print</span>
+              <span class="feat-pill">Ad Creatives</span>
+              <span class="feat-pill">Mascot Systems</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD 3: Long and Short Video Editing -->
+        <div class="service-card" data-service="3">
+          <div class="card-orbit-pulse-emitter">
+            <div class="pulse-ring pulse-ring-1"></div>
+            <div class="pulse-ring pulse-ring-2"></div>
+            <div class="pulse-ring pulse-ring-3"></div>
+          </div>
+
+          <div class="card-image-wrapper">
+            <span class="card-floating-badge">VIRAL ENGAGEMENT</span>
+            <img src="assets/images/services/service_video_editing.svg" alt="Long and Short Video editing" class="card-preview-svg">
+          </div>
+
+          <div class="card-body-content">
+            <span class="service-card-number">03 / POST-PRODUCTION</span>
+            <h3 class="service-card-title">Long &amp; Short Video Editing</h3>
+            <p class="service-card-desc">
+              Stop the doom-scroll dead in its tracks. We edit high-retention TikToks, viral Instagram reels, and deep-dive YouTube documentaries packed with snappy pacing, sound design, and kinetic subtitles that convert.
+            </p>
+            <div class="card-feature-pills">
+              <span class="feat-pill">TikTok &amp; Reels</span>
+              <span class="feat-pill">YouTube Long-Form</span>
+              <span class="feat-pill">Snappy Pacing</span>
+              <span class="feat-pill">Viral Sound FX</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD 4: AI Imaginary Generation -->
+        <div class="service-card" data-service="4">
+          <div class="card-orbit-pulse-emitter">
+            <div class="pulse-ring pulse-ring-1"></div>
+            <div class="pulse-ring pulse-ring-2"></div>
+            <div class="pulse-ring pulse-ring-3"></div>
+          </div>
+
+          <div class="card-image-wrapper">
+            <span class="card-floating-badge">NEXT-GEN AI</span>
+            <img src="assets/images/services/service_ai_generation.svg" alt="AI Imaginary Generation" class="card-preview-svg">
+          </div>
+
+          <div class="card-body-content">
+            <span class="service-card-number">04 / CREATIVE TECH</span>
+            <h3 class="service-card-title">AI Imaginary Generation</h3>
+            <p class="service-card-desc">
+              Dream up the impossible, render it in seconds. We blend cutting-edge generative AI with pro art direction to produce mind-bending surreal concepts, futuristic product staging, and rapid visual ideation.
+            </p>
+            <div class="card-feature-pills">
+              <span class="feat-pill">Concept Art</span>
+              <span class="feat-pill">Surreal Staging</span>
+              <span class="feat-pill">Rapid Prototypes</span>
+              <span class="feat-pill">AI CGI FX</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD 5: System, Website, and Application Creation -->
+        <div class="service-card" data-service="5">
+          <div class="card-orbit-pulse-emitter">
+            <div class="pulse-ring pulse-ring-1"></div>
+            <div class="pulse-ring pulse-ring-2"></div>
+            <div class="pulse-ring pulse-ring-3"></div>
+          </div>
+
+          <div class="card-image-wrapper">
+            <span class="card-floating-badge" style="border-color: var(--tech-purple-light); color: var(--tech-gold);">FULL-STACK &amp; CLOUD</span>
+            <img src="assets/images/services/service_system_web_app.svg" alt="System, website, and application creation" class="card-preview-svg">
+          </div>
+
+          <div class="card-body-content">
+            <span class="service-card-number" style="color: var(--tech-purple-light);">05 / DIGITAL &amp; SYSTEMS</span>
+            <h3 class="service-card-title">System, Website &amp; Application Creation</h3>
+            <p class="service-card-desc">
+              Bulletproof digital engines without the headaches. From lightning-fast marketing websites to full-stack web applications and automated business workflows, we build code that scales effortlessly and never flinches.
+            </p>
+            <div class="card-feature-pills">
+              <span class="feat-pill">Custom Web Apps</span>
+              <span class="feat-pill">Enterprise Systems</span>
+              <span class="feat-pill">Slick UI/UX</span>
+              <span class="feat-pill">Automated Workflows</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       THIRD SECTION: TRUSTED BY 10+ PATEMO'S! (INFINITE MOVING CAROUSEL)
+       Moving slowly from left to right as requested!
+       =================================================================== -->
+  <section class="clients-section" id="clients">
+    <div class="container">
+      <div class="section-header-center" style="margin-bottom: 40px;">
+        <div class="section-tag-pill">
+          <span class="section-tag-text">✦ PROVEN TRACK RECORD</span>
+        </div>
+        <h2 class="section-title">TRUSTED BY <span class="text-orange">10+ PATEMO'S!</span></h2>
+        <p class="section-desc">
+          Collaborating with our visionary Patemo's: industry pioneers, national banking institutions, property leaders, and tech startups.
+        </p>
+      </div>
+    </div>
+
+    <!-- Infinite Carousel Moving Left to Right -->
+    <div class="marquee-container" aria-label="Patemo's logos carousel">
+      <div class="marquee-track">
+        <!-- Client 1: Esco Lifescience Group -->
+        <div class="client-badge-card">
+          <div class="client-logo-icon logo-has-img">
+            <img src="assets/images/clients/esco_lifesciences.png" alt="Esco Lifescience Group" class="client-brand-logo-img">
+          </div>
+          <div class="client-meta">
+            <span class="client-name">Esco Lifescience Group</span>
+            <span class="client-project-tag">Company Profile Booklet</span>
+          </div>
+        </div>
+
+        <!-- Client 2: Dharma Polimetal Tbk -->
+        <div class="client-badge-card">
+          <div class="client-logo-icon logo-has-img">
+            <img src="assets/images/clients/dharma_polimetal.png" alt="Dharma Polimetal Tbk" class="client-brand-logo-img">
+          </div>
+          <div class="client-meta">
+            <span class="client-name">Dharma Polimetal Tbk</span>
+            <span class="client-project-tag">Corporate 4K Video</span>
+          </div>
+        </div>
+
+        <!-- Client 3: Belpin Blessin Indonesia -->
+        <div class="client-badge-card">
+          <div class="client-logo-icon logo-has-img bg-belpin">
+            <img src="assets/images/clients/belpin.png" alt="Belpin Blessin Indonesia" class="client-brand-logo-img">
+          </div>
+          <div class="client-meta">
+            <span class="client-name">Belpin Blessin Indonesia</span>
+            <span class="client-project-tag">Social Media Reels</span>
+          </div>
+        </div>
+
+        <!-- Client 4: BCA -->
+        <div class="client-badge-card">
+          <div class="client-logo-icon logo-has-img bg-bca">
+            <img src="assets/images/clients/bca.png" alt="Bank Central Asia (BCA)" class="client-brand-logo-img">
+          </div>
+          <div class="client-meta">
+            <span class="client-name">Bank Central Asia (BCA)</span>
+            <span class="client-project-tag">Campaigns &amp; myBCA</span>
+          </div>
+        </div>
+
+        <!-- Client 5: Summarecon Group -->
+        <div class="client-badge-card">
+          <div class="client-logo-icon logo-has-img">
+            <img src="assets/images/clients/summarecon.png" alt="Summarecon Group" class="client-brand-logo-img">
+          </div>
+          <div class="client-meta">
+            <span class="client-name">Summarecon Group</span>
+            <span class="client-project-tag">Career &amp; Culture Video</span>
+          </div>
+        </div>
+
+        <!-- Client 6: Segari -->
+        <div class="client-badge-card">
+          <div class="client-logo-icon" style="color: #10B981;">SG</div>
+          <div class="client-meta">
+            <span class="client-name">Segari</span>
+            <span class="client-project-tag">Mascot &amp; Packaging</span>
+          </div>
+        </div>
+
+        <!-- Client 7: Astra Honda Motor -->
+        <div class="client-badge-card">
+          <div class="client-logo-icon" style="color: #EF4444;">AHM</div>
+          <div class="client-meta">
+            <span class="client-name">Astra Honda Motor</span>
+            <span class="client-project-tag">Tooling Collaboration</span>
+          </div>
+        </div>
+
+        <!-- Client 8: Toyota -->
+        <div class="client-badge-card">
+          <div class="client-logo-icon">TYT</div>
+          <div class="client-meta">
+            <span class="client-name">Toyota Indonesia</span>
+            <span class="client-project-tag">Industrial Partner</span>
+          </div>
+        </div>
+
+        <!-- Client 9: Yamaha -->
+        <div class="client-badge-card">
+          <div class="client-logo-icon" style="color: #3B82F6;">YMH</div>
+          <div class="client-meta">
+            <span class="client-name">Yamaha Motor</span>
+            <span class="client-project-tag">Manufacturing Partner</span>
+          </div>
+        </div>
+
+        <!-- Client 10: Fortius HRIS -->
+        <div class="client-badge-card">
+          <div class="client-logo-icon" style="color: #8B5CF6;">FTS</div>
+          <div class="client-meta">
+            <span class="client-name">Fortius HRIS</span>
+            <span class="client-project-tag">Web UI &amp; Social Carousels</span>
+          </div>
+        </div>
+
+        <!-- Duplicate track for seamless infinite marquee loop -->
+        <div class="client-badge-card">
+          <div class="client-logo-icon logo-has-img">
+            <img src="assets/images/clients/esco_lifesciences.png" alt="Esco Lifescience Group" class="client-brand-logo-img">
+          </div>
+          <div class="client-meta">
+            <span class="client-name">Esco Lifescience Group</span>
+            <span class="client-project-tag">Company Profile Booklet</span>
+          </div>
+        </div>
+        <div class="client-badge-card">
+          <div class="client-logo-icon logo-has-img">
+            <img src="assets/images/clients/dharma_polimetal.png" alt="Dharma Polimetal Tbk" class="client-brand-logo-img">
+          </div>
+          <div class="client-meta">
+            <span class="client-name">Dharma Polimetal Tbk</span>
+            <span class="client-project-tag">Corporate 4K Video</span>
+          </div>
+        </div>
+        <div class="client-badge-card">
+          <div class="client-logo-icon logo-has-img bg-belpin">
+            <img src="assets/images/clients/belpin.png" alt="Belpin Blessin Indonesia" class="client-brand-logo-img">
+          </div>
+          <div class="client-meta">
+            <span class="client-name">Belpin Blessin Indonesia</span>
+            <span class="client-project-tag">Social Media Reels</span>
+          </div>
+        </div>
+        <div class="client-badge-card">
+          <div class="client-logo-icon logo-has-img bg-bca">
+            <img src="assets/images/clients/bca.png" alt="Bank Central Asia (BCA)" class="client-brand-logo-img">
+          </div>
+          <div class="client-meta">
+            <span class="client-name">Bank Central Asia (BCA)</span>
+            <span class="client-project-tag">Campaigns &amp; myBCA</span>
+          </div>
+        </div>
+        <div class="client-badge-card">
+          <div class="client-logo-icon logo-has-img">
+            <img src="assets/images/clients/summarecon.png" alt="Summarecon Group" class="client-brand-logo-img">
+          </div>
+          <div class="client-meta">
+            <span class="client-name">Summarecon Group</span>
+            <span class="client-project-tag">Career &amp; Culture Video</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Metrics Bar -->
+    <div class="container">
+      <div class="client-metrics-bar">
+        <div class="metric-item">
+          <div class="metric-number">10+</div>
+          <div class="metric-label">Happy Patemo's!</div>
+        </div>
+        <div class="metric-item">
+          <div class="metric-number">50+</div>
+          <div class="metric-label">Completed Projects</div>
+        </div>
+        <div class="metric-item">
+          <div class="metric-number">99.8%</div>
+          <div class="metric-label">Patemo's! Satisfaction</div>
+        </div>
+        <div class="metric-item">
+          <div class="metric-number">0%</div>
+          <div class="metric-label">Fluff Guaranteed</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       NEW SECTION: GET TO KNOW OUR MARMO PEOPLE! (FLIGHT CREW)
+       Directly under Trusted by 10+ Patemo's!
+       Layout: Image on top, and under image is Name & Job Title
+       =================================================================== -->
+  <section class="team-section" id="team">
+    <div class="container">
+      <div class="section-header-center">
+        <div class="section-tag-pill">
+          <span class="section-tag-text">✦ MEET THE FLIGHT CREW</span>
+        </div>
+        <h2 class="section-title">GET TO KNOW OUR <span class="text-orange">MARMO PEOPLE!</span></h2>
+        <p class="section-desc">
+          The pilots, co-pilots, and flight attendants steering the magic ship. Friendly faces, obsessive craft, and zero corporate fluff.
+        </p>
+      </div>
+
+      <!-- 11 Marmo People Team Grid -->
+      <div class="team-grid">
+        <!-- 1. Rifqy as a Marmo's Pilot -->
+        <div class="team-card flight-deck">
+          <div class="team-avatar-wrap">
+            <div class="team-avatar-bg-glow"></div>
+            <img src="assets/images/team/rifqy_pilot.png" alt="Rifqy - Marmo's Pilot" class="team-avatar-img">
+          </div>
+          <span class="team-dept-pill">✈️ Flight Deck</span>
+          <h3 class="team-name">Rifqy</h3>
+          <p class="team-role">Marmo's Pilot</p>
+        </div>
+
+        <!-- 2. Boy as a Marmo's Co-Pilot -->
+        <div class="team-card flight-deck">
+          <div class="team-avatar-wrap">
+            <div class="team-avatar-bg-glow"></div>
+            <img src="assets/images/team/boy_copilot.png" alt="Boy - Marmo's Co-Pilot" class="team-avatar-img">
+          </div>
+          <span class="team-dept-pill">✈️ Flight Deck</span>
+          <h3 class="team-name">Boy</h3>
+          <p class="team-role">Marmo's Co-Pilot</p>
+        </div>
+
+        <!-- 3. Khalf as a Marmo Creative Co-Pilot -->
+        <div class="team-card creative-crew">
+          <div class="team-avatar-wrap">
+            <div class="team-avatar-bg-glow"></div>
+            <img src="assets/images/team/khalf_creative.png" alt="Khalf - Marmo Creative Co-Pilot" class="team-avatar-img">
+          </div>
+          <span class="team-dept-pill">🎨 Creative Flight</span>
+          <h3 class="team-name">Khalf</h3>
+          <p class="team-role">Marmo Creative Co-Pilot</p>
+        </div>
+
+        <!-- 4. Mevy as a Creative Flight Attendant -->
+        <div class="team-card creative-crew">
+          <div class="team-avatar-wrap">
+            <div class="team-avatar-bg-glow"></div>
+            <img src="assets/images/team/mevy_creative.png" alt="Mevy - Creative Flight Attendant" class="team-avatar-img">
+          </div>
+          <span class="team-dept-pill">🎨 Creative Cabin</span>
+          <h3 class="team-name">Mevy</h3>
+          <p class="team-role">Creative Flight Attendant</p>
+        </div>
+
+        <!-- 5. Ical as a Creative Flight Attendant -->
+        <div class="team-card creative-crew">
+          <div class="team-avatar-wrap">
+            <div class="team-avatar-bg-glow"></div>
+            <img src="assets/images/team/ical_creative.png" alt="Ical - Creative Flight Attendant" class="team-avatar-img">
+          </div>
+          <span class="team-dept-pill">🎨 Creative Cabin</span>
+          <h3 class="team-name">Ical</h3>
+          <p class="team-role">Creative Flight Attendant</p>
+        </div>
+
+        <!-- 6. Fico as a Creative Flight Attendant -->
+        <div class="team-card creative-crew">
+          <div class="team-avatar-wrap">
+            <div class="team-avatar-bg-glow"></div>
+            <img src="assets/images/team/fico_creative.png" alt="Fico - Creative Flight Attendant" class="team-avatar-img">
+          </div>
+          <span class="team-dept-pill">🎨 Creative Cabin</span>
+          <h3 class="team-name">Fico</h3>
+          <p class="team-role">Creative Flight Attendant</p>
+        </div>
+
+        <!-- 7. Ceming as a Jr. Creative Flight Attendant -->
+        <div class="team-card creative-crew">
+          <div class="team-avatar-wrap">
+            <div class="team-avatar-bg-glow"></div>
+            <img src="assets/images/team/ceming_creative.png" alt="Ceming - Jr. Creative Flight Attendant" class="team-avatar-img">
+          </div>
+          <span class="team-dept-pill">🎨 Junior Crew</span>
+          <h3 class="team-name">Ceming</h3>
+          <p class="team-role">Jr. Creative Flight Attendant</p>
+        </div>
+
+        <!-- 8. Fadil as a Tech Flight Attendant -->
+        <div class="team-card tech-crew">
+          <div class="team-avatar-wrap">
+            <div class="team-avatar-bg-glow"></div>
+            <img src="assets/images/team/fadil_tech.png" alt="Fadil - Tech Flight Attendant" class="team-avatar-img">
+          </div>
+          <span class="team-dept-pill">⚡ Tech Avionics</span>
+          <h3 class="team-name">Fadil</h3>
+          <p class="team-role">Tech Flight Attendant</p>
+        </div>
+
+        <!-- 9. Diddy as a Tech Flight Attendant -->
+        <div class="team-card tech-crew">
+          <div class="team-avatar-wrap">
+            <div class="team-avatar-bg-glow"></div>
+            <img src="assets/images/team/diddy_tech.png" alt="Diddy - Tech Flight Attendant" class="team-avatar-img">
+          </div>
+          <span class="team-dept-pill">⚡ Tech Avionics</span>
+          <h3 class="team-name">Diddy</h3>
+          <p class="team-role">Tech Flight Attendant</p>
+        </div>
+
+        <!-- 10. Widdie as a Tech Flight Attendant -->
+        <div class="team-card tech-crew">
+          <div class="team-avatar-wrap">
+            <div class="team-avatar-bg-glow"></div>
+            <img src="assets/images/team/widdie_tech.png" alt="Widdie - Tech Flight Attendant" class="team-avatar-img">
+          </div>
+          <span class="team-dept-pill">⚡ Tech Avionics</span>
+          <h3 class="team-name">Widdie</h3>
+          <p class="team-role">Tech Flight Attendant</p>
+        </div>
+
+        <!-- 11. Ega as a Tech Flight Attendant -->
+        <div class="team-card tech-crew">
+          <div class="team-avatar-wrap">
+            <div class="team-avatar-bg-glow"></div>
+            <img src="assets/images/team/ega_tech.png" alt="Ega - Tech Flight Attendant" class="team-avatar-img">
+          </div>
+          <span class="team-dept-pill">⚡ Tech Avionics</span>
+          <h3 class="team-name">Ega</h3>
+          <p class="team-role">Tech Flight Attendant</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       DUAL BUSINESS PORTAL (EXPLORE CREATIVE SHOWROOM & TECH PORTFOLIO)
+       =================================================================== -->
+  <section class="section-padding" style="padding: 70px 0 90px 0; background: rgba(18, 13, 49, 0.9);">
+    <div class="container">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 28px;">
+        <!-- Portal Card 1: Marmo Creative! -->
+        <div style="background: linear-gradient(135deg, rgba(27, 21, 69, 0.9) 0%, rgba(42, 33, 102, 0.8) 100%); border-radius: var(--radius-lg); border: 2px solid var(--color-orange); padding: 36px 30px; display: flex; flex-direction: column; justify-content: space-between; position: relative; overflow: hidden;">
+          <div style="position: absolute; top: -30px; right: -30px; width: 140px; height: 140px; background: radial-gradient(circle, var(--color-orange-glow) 0%, transparent 70%);"></div>
+          <div>
+            <div style="display: inline-flex; align-items: center; gap: 8px; font-size: 11px; font-weight: 800; color: var(--color-orange); background: rgba(255, 158, 27, 0.15); border: 1px solid var(--color-orange); padding: 4px 14px; border-radius: var(--radius-full); text-transform: uppercase; margin-bottom: 16px;">
+              <span>🎨</span> DEDICATED SHOWROOM
+            </div>
+            <h3 class="comic-title" style="font-size: 28px; color: #FFF; margin-bottom: 12px;">MARMO CREATIVE!</h3>
+            <p style="font-size: 14.5px; color: var(--text-sub); line-height: 1.6; margin-bottom: 24px;">
+              Explore our official portfolio showroom featuring corporate booklets for Esco Group, 4K industrial video for Dharma, viral reels for Belpin &amp; Summarecon, and BCA ad creatives.
+            </p>
+          </div>
+          <div>
+            <a href="creative.html" class="cta-btn-creative" style="display: inline-flex; width: 100%; justify-content: center; padding: 14px 24px;">
+              <span>Enter Creative Showroom</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Portal Card 2: Marmo Tech! -->
+        <div style="background: linear-gradient(135deg, rgba(22, 19, 34, 0.95) 0%, rgba(35, 28, 58, 0.85) 100%); border-radius: var(--radius-lg); border: 2px solid var(--tech-purple-light); padding: 36px 30px; display: flex; flex-direction: column; justify-content: space-between; position: relative; overflow: hidden;">
+          <div style="position: absolute; top: -30px; right: -30px; width: 140px; height: 140px; background: radial-gradient(circle, var(--tech-purple-glow) 0%, transparent 70%);"></div>
+          <div>
+            <div style="display: inline-flex; align-items: center; gap: 8px; font-size: 11px; font-weight: 800; color: var(--tech-gold); background: rgba(255, 199, 44, 0.15); border: 1px solid var(--tech-gold); padding: 4px 14px; border-radius: var(--radius-full); text-transform: uppercase; margin-bottom: 16px;">
+              <span>⚡</span> TECH &amp; SYSTEMS DIVISION
+            </div>
+            <h3 class="comic-title" style="font-size: 28px; color: #FFF; margin-bottom: 12px;">MARMO TECH!</h3>
+            <p style="font-size: 14.5px; color: var(--text-sub); line-height: 1.6; margin-bottom: 24px;">
+              Inspect our high-performance engineering portfolio: Haho talent platform, Bank Promo national aggregator, TRANSFLYND fleet optimization, Sahabat Outlet PPOB fintech, and Wright Partners.
+            </p>
+          </div>
+          <div>
+            <a href="tech.html" class="cta-btn-tech" style="display: inline-flex; width: 100%; justify-content: center; padding: 14px 24px;">
+              <span>Explore Tech Portfolio</span>
+              <i class="fa-solid fa-bolt"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       FOURTH SECTION: CONTACT US (MAGIC BANNER)
+       Banner that informs: "We had fun leave a mark. nofluff ,just magic."
+       Includes CTA button to input email
+       =================================================================== -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <div class="contact-magic-banner">
+        <div class="banner-tagline-pre">✦ READY TO LAUNCH?</div>
+        <!-- User's Exact Banner Text -->
+        <h2 class="banner-main-headline">
+          WE HAD FUN, <span class="orange-highlight">LEAVE A MARK.</span><br>
+          NO FLUFF, JUST MAGIC.
+        </h2>
+        <p class="banner-sub-text">
+          Got a bold project in mind? Drop your email below, and our team will get in touch to bring your vision to life.
+        </p>
+
+        <!-- CTA Form to Input Email -->
+        <form class="contact-cta-form" id="magicContactForm">
+          <input type="email" class="contact-email-input" placeholder="Enter your business email address..." required aria-label="Your email address">
+          <button type="submit" class="contact-submit-btn">
+            <span>Let's Talk Magic</span>
+            <i class="fa-solid fa-paper-plane"></i>
+          </button>
+        </form>
+
+        <!-- Direct Contact Chips -->
+        <div class="direct-contact-chips">
+          <a href="mailto:m.rifqy512@gmail.com" class="contact-chip">
+            <i class="fa-solid fa-envelope" style="color: var(--color-orange);"></i>
+            <span>m.rifqy512@gmail.com</span>
+          </a>
+          <a href="https://wa.me/6281546118733" target="_blank" class="contact-chip">
+            <i class="fa-brands fa-whatsapp" style="color: #25D366;"></i>
+            <span>+62 815 4611 8733</span>
+          </a>
+          <span class="contact-chip" style="background: rgba(255, 158, 27, 0.1); border-color: var(--color-orange);">
+            <i class="fa-solid fa-location-dot" style="color: var(--color-orange);"></i>
+            <span>Ulujami Street No. 57, South Jakarta</span>
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       FIFTH SECTION: FOOTER INFORMATION
+       - Marmo!
+       - Address: Ulujami Street No. 57, South Jakarta
+       - Icons for LinkedIn and WhatsApp
+       =================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <!-- Brand Info -->
+        <div class="footer-brand-column">
+          <div class="footer-logo-title">
+            <img src="assets/images/sprites/marmo_icon_new.png" alt="Marmo" style="width: 40px; height: 40px; object-fit: contain;">
+            <span>MARMO!</span>
+          </div>
+          <p class="footer-brand-desc">
+            Creative Production House &amp; Tech Studio based in South Jakarta. Leave a mark. No fluff, just magic.
+          </p>
+          <div class="footer-address-box">
+            <i class="fa-solid fa-map-pin"></i>
+            <span><strong>Marmo! Headquarters</strong><br>Ulujammin Street No. 57, South Jakarta, Indonesia</span>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-nav-list">
+            <li><a href="#home" class="footer-nav-link">Home</a></li>
+            <li><a href="#about" class="footer-nav-link">About Us</a></li>
+            <li><a href="#services" class="footer-nav-link">What We Serve</a></li>
+            <li><a href="#team" class="footer-nav-link">Marmo People!</a></li>
+            <li><a href="creative.html" class="footer-nav-link" style="color: var(--color-orange);">Marmo Creative! Showroom</a></li>
+            <li><a href="tech.html" class="footer-nav-link" style="color: var(--tech-purple-light);">Marmo Tech! Division</a></li>
+            <li><a href="#contact" class="footer-nav-link">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Services -->
+        <div>
+          <h4 class="footer-col-title">What We Serve</h4>
+          <ul class="footer-nav-list">
+            <li><a href="#services" class="footer-nav-link">Company Profile Video</a></li>
+            <li><a href="#services" class="footer-nav-link">Graphic Design &amp; Brand</a></li>
+            <li><a href="#services" class="footer-nav-link">Long &amp; Short Video Editing</a></li>
+            <li><a href="#services" class="footer-nav-link">AI Imaginary Generation</a></li>
+            <li><a href="tech.html" class="footer-nav-link">System &amp; Web Applications</a></li>
+          </ul>
+        </div>
+
+        <!-- Connect & Social Icons (LinkedIn & WhatsApp) -->
+        <div>
+          <h4 class="footer-col-title">Connect With Us</h4>
+          <p style="font-size: 13px; color: var(--text-sub); margin-bottom: 14px;">
+            Follow our latest productions or chat directly on WhatsApp.
+          </p>
+          <div class="footer-social-group">
+            <!-- WhatsApp Icon -->
+            <a href="https://wa.me/6281546118733" target="_blank" class="social-icon-btn whatsapp" aria-label="Contact Marmo on WhatsApp">
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+
+            <!-- LinkedIn Icon -->
+            <a href="https://www.linkedin.com" target="_blank" class="social-icon-btn linkedin" aria-label="Visit Marmo on LinkedIn">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+
+            <!-- Instagram Icon -->
+            <a href="https://instagram.com" target="_blank" class="social-icon-btn instagram" aria-label="Visit Marmo on Instagram">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <!-- YouTube Icon -->
+            <a href="https://youtube.com" target="_blank" class="social-icon-btn" style="background: #18123C;" aria-label="Visit Marmo on YouTube">
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+          </div>
+          <div style="margin-top: 18px; font-size: 12px; color: var(--text-muted);">
+            Direct Phone: <a href="tel:+6281546118733" style="color: var(--color-orange); text-decoration: none; font-weight: bold;">+62 815 4611 8733</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom Copyright Bar -->
+      <div class="footer-bottom-bar">
+        <div>
+          &copy; 2026 <strong>MARMO PRODUCTION HOUSE</strong>. All rights reserved.
+        </div>
+        <div>
+          Built with <span style="color: var(--color-orange);">♥</span> and magic in South Jakarta.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===================================================================
+       MODAL: PROJECT CASE STUDY LIGHTBOX
+       =================================================================== -->
+  <div class="modal-overlay" id="projectModal">
+    <div class="modal-card-box">
+      <button class="modal-close-btn" aria-label="Close Case Study Modal">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <div class="modal-body">
+        <div style="display: flex; gap: 8px; margin-bottom: 12px; flex-wrap: wrap;">
+          <span id="modalFormat" class="port-format-badge" style="position: static;">FORMAT</span>
+          <span id="modalYear" class="port-year-badge" style="position: static;">YEAR</span>
+        </div>
+        <h2 id="modalTitle" class="comic-title" style="font-size: 28px; color: #FFF; margin-bottom: 6px;">Project Title</h2>
+        <h4 id="modalClient" style="font-size: 14px; color: var(--color-orange); margin-bottom: 20px;">Client Name</h4>
+
+        <div style="width: 100%; height: 260px; background: #0A081D; border-radius: var(--radius-md); overflow: hidden; margin-bottom: 24px; border: 1px solid rgba(255, 158, 27, 0.3);">
+          <img id="modalImg" src="" alt="Project Showcase" style="width: 100%; height: 100%; object-fit: contain;">
+        </div>
+
+        <h4 style="font-family: var(--font-display); font-size: 16px; color: #FFF; margin-bottom: 8px;">About The Project</h4>
+        <p id="modalDesc" style="font-size: 14px; color: var(--text-sub); line-height: 1.7; margin-bottom: 20px;">
+          Project description...
+        </p>
+
+        <h4 style="font-family: var(--font-display); font-size: 16px; color: #FFF; margin-bottom: 8px;">Key Deliverables</h4>
+        <ul id="modalDeliverables" style="font-size: 14px; color: var(--text-sub); line-height: 1.7; padding-left: 20px; margin-bottom: 28px;">
+        </ul>
+
+        <div style="display: flex; gap: 12px; justify-content: flex-end;">
+          <a href="#contact" class="cta-btn-creative" style="padding: 10px 24px; font-size: 14px;" onclick="document.getElementById('projectModal').classList.remove('active'); document.body.style.overflow='';">
+            Start Similar Project
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Message -->
+  <div class="toast-notification" id="toastNotification">
+    Notification text here
+  </div>
+
+  <!-- Main JavaScript File -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

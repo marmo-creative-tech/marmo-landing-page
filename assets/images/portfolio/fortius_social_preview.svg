@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 320" fill="none">
+  <defs>
+    <linearGradient id="fortiusSocBg" x1="0" y1="0" x2="480" y2="320" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#191544" />
+      <stop offset="100%" stop-color="#0E0B28" />
+    </linearGradient>
+    <linearGradient id="purpleSlide" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#7C3AED" />
+      <stop offset="100%" stop-color="#4C1D95" />
+    </linearGradient>
+    <linearGradient id="blueSlide" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2563EB" />
+      <stop offset="100%" stop-color="#1E3A8A" />
+    </linearGradient>
+  </defs>
+
+  <rect width="480" height="320" rx="16" fill="url(#fortiusSocBg)" />
+
+  <g transform="translate(45, 25)">
+    <!-- Instagram Carousel Feed Grid Simulation -->
+    <!-- Slide 1: "Tau Gak Sih?" -->
+    <g transform="translate(0, 10)">
+      <rect width="120" height="120" rx="10" fill="url(#purpleSlide)" stroke="#A78BFA" stroke-width="2" />
+      <rect x="8" y="10" width="40" height="12" rx="4" fill="#5B21B6" />
+      <text x="12" y="19" fill="#FFFFFF" font-family="'Outfit', sans-serif" font-size="7" font-weight="bold">FFORTIUS</text>
+      <text x="10" y="45" fill="#FEF08A" font-family="'Lilita One', sans-serif" font-size="12">Tau Gak</text>
+      <text x="10" y="60" fill="#FEF08A" font-family="'Lilita One', sans-serif" font-size="12">Sih?!</text>
+      <text x="10" y="78" fill="#DDD6FE" font-family="'Outfit', sans-serif" font-size="7">Kalo burnout HR</text>
+      <text x="10" y="88" fill="#DDD6FE" font-family="'Outfit', sans-serif" font-size="7">makin meningkat?</text>
+      <rect x="10" y="98" width="55" height="14" rx="7" fill="#F59E0B" />
+      <text x="14" y="108" fill="#120E2E" font-family="'Outfit', sans-serif" font-size="6" font-weight="bold">BACA TIPS &gt;</text>
+    </g>
+
+    <!-- Slide 2: "Waspada Tanda Burnout" -->
+    <g transform="translate(135, 10)">
+      <rect width="120" height="120" rx="10" fill="url(#purpleSlide)" stroke="#A78BFA" stroke-width="2" />
+      <rect x="8" y="10" width="40" height="12" rx="4" fill="#5B21B6" />
+      <text x="12" y="19" fill="#FFFFFF" font-family="'Outfit', sans-serif" font-size="7" font-weight="bold">FFORTIUS</text>
+      <text x="10" y="42" fill="#FCA5A5" font-family="'Outfit', sans-serif" font-size="8" font-weight="bold">WASPADA TANDA</text>
+      <text x="10" y="62" fill="#EF4444" font-family="'Lilita One', sans-serif" font-size="15">BURNOUT!</text>
+      <circle cx="60" cy="85" r="14" fill="#4C1D95" />
+      <text x="52" y="90" fill="#FDE047" font-size="14">🔥</text>
+      <text x="10" y="108" fill="#DDD6FE" font-family="'Outfit', sans-serif" font-size="6">Pada Karyawan Kantor</text>
+    </g>
+
+    <!-- Slide 3: "Jangan Ajuin Resign Dulu!" -->
+    <g transform="translate(270, 10)">
+      <rect width="120" height="120" rx="10" fill="url(#blueSlide)" stroke="#60A5FA" stroke-width="2" />
+      <rect x="8" y="10" width="40" height="12" rx="4" fill="#1E40AF" />
+      <text x="12" y="19" fill="#FFFFFF" font-family="'Outfit', sans-serif" font-size="7" font-weight="bold">FFORTIUS</text>
+      <text x="10" y="44" fill="#FFFFFF" font-family="'Lilita One', sans-serif" font-size="13">Jangan</text>
+      <text x="10" y="58" fill="#FACC15" font-family="'Lilita One', sans-serif" font-size="13">Ajuin Resign!</text>
+      <text x="10" y="76" fill="#BFDBFE" font-family="'Outfit', sans-serif" font-size="7">Sebelum pahami hal ini</text>
+      <rect x="10" y="96" width="60" height="16" rx="8" fill="#FFFFFF" />
+      <text x="16" y="107" fill="#1E3A8A" font-family="'Outfit', sans-serif" font-size="7" font-weight="bold">Slide Next 👉</text>
+    </g>
+
+    <!-- Bottom Row: Gen Z & Ngantor Memes -->
+    <g transform="translate(0, 142)">
+      <rect width="190" height="85" rx="10" fill="#1E194D" stroke="#8B5CF6" stroke-width="1.5" />
+      <text x="14" y="24" fill="#A78BFA" font-family="'Lilita One', sans-serif" font-size="12">Ketika Gen Z Ngambil Cuti</text>
+      <text x="14" y="38" fill="#DDD6FE" font-family="'Outfit', sans-serif" font-size="8">Maju sini yang mau ganggu cuti gue!</text>
+      <rect x="14" y="50" width="95" height="22" rx="11" fill="#7C3AED" />
+      <text x="22" y="64" fill="#FFFFFF" font-family="'Outfit', sans-serif" font-size="8" font-weight="bold">Viral Engagement</text>
+    </g>
+
+    <g transform="translate(200, 142)">
+      <rect width="190" height="85" rx="10" fill="#1E194D" stroke="#3B82F6" stroke-width="1.5" />
+      <text x="14" y="24" fill="#60A5FA" font-family="'Lilita One', sans-serif" font-size="14">Ngantor. Relate HR Memes</text>
+      <text x="14" y="38" fill="#BFDBFE" font-family="'Outfit', sans-serif" font-size="8">Edukasi HRIS &amp; Automasi Absensi Modern</text>
+      <rect x="14" y="50" width="85" height="22" rx="11" fill="#2563EB" />
+      <text x="22" y="64" fill="#FFFFFF" font-family="'Outfit', sans-serif" font-size="8" font-weight="bold">Carousel Kit</text>
+    </g>
+  </g>
+
+  <!-- Tag Pill -->
+  <g transform="translate(24, 275)">
+    <rect width="140" height="28" rx="14" fill="#7C3AED" stroke="#000000" stroke-width="1.5" />
+    <text x="14" y="18" fill="#FFFFFF" font-family="'Lilita One', sans-serif" font-size="12">SOCIAL MEDIA · 2025</text>
+  </g>
+</svg>

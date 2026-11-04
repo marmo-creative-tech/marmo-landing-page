@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 320" fill="none">
+  <defs>
+    <linearGradient id="fortiusBg" x1="0" y1="0" x2="480" y2="320" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#191544" />
+      <stop offset="100%" stop-color="#0E0B28" />
+    </linearGradient>
+    <linearGradient id="laptopGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1E1B4B" />
+      <stop offset="100%" stop-color="#0F0D2E" />
+    </linearGradient>
+  </defs>
+
+  <rect width="480" height="320" rx="16" fill="url(#fortiusBg)" />
+
+  <g transform="translate(45, 25)">
+    <!-- Web Interface Canvas Mockup -->
+    <rect width="390" height="235" rx="12" fill="url(#laptopGrad)" stroke="#6366F1" stroke-width="2.5" />
+    
+    <!-- Top Navigation -->
+    <rect width="390" height="30" rx="12" fill="#0E0C26" />
+    <circle cx="16" cy="15" r="4" fill="#EF4444" />
+    <circle cx="28" cy="15" r="4" fill="#F59E0B" />
+    <circle cx="40" cy="15" r="4" fill="#10B981" />
+    <text x="60" y="19" fill="#FFFFFF" font-family="'Lilita One', sans-serif" font-size="12">FFORTIUS HRIS</text>
+    <text x="180" y="19" fill="#A5B4FC" font-family="'Outfit', sans-serif" font-size="9">Web &amp; Mobile UI/UX Design System</text>
+
+    <!-- Content Sections inside UI -->
+    <!-- Left: Illustration character banner "Oops! You've caught us! Maintenance & Update" -->
+    <g transform="translate(15, 42)">
+      <rect width="180" height="175" rx="8" fill="#1E194D" stroke="#4338CA" stroke-width="1.5" />
+      <text x="14" y="22" fill="#818CF8" font-family="'Outfit', sans-serif" font-size="9" font-weight="bold">Bagaimana Kami Dapat Membantu</text>
+      <text x="14" y="38" fill="#FFFFFF" font-family="'Lilita One', sans-serif" font-size="12">Penghitungan Akurat HR</text>
+
+      <!-- Dashboard Cards -->
+      <g transform="translate(12, 50)">
+        <rect width="74" height="48" rx="6" fill="#312E81" />
+        <text x="8" y="18" fill="#C7D2FE" font-family="'Outfit', sans-serif" font-size="8">Attendance</text>
+        <text x="8" y="36" fill="#10B981" font-family="'Lilita One', sans-serif" font-size="14">98.4%</text>
+
+        <rect x="82" width="74" height="48" rx="6" fill="#312E81" />
+        <text x="90" y="18" fill="#C7D2FE" font-family="'Outfit', sans-serif" font-size="8">Leaves Paid</text>
+        <text x="90" y="36" fill="#F59E0B" font-family="'Lilita One', sans-serif" font-size="14">14 Days</text>
+      </g>
+
+      <!-- Verification illustration -->
+      <g transform="translate(12, 110)">
+        <rect width="156" height="50" rx="6" fill="#2E1065" stroke="#7C3AED" stroke-width="1" />
+        <circle cx="28" cy="25" r="14" fill="#8B5CF6" />
+        <text x="50" y="24" fill="#FFFFFF" font-family="'Outfit', sans-serif" font-size="9" font-weight="bold">Verify it's you!</text>
+        <text x="50" y="36" fill="#DDD6FE" font-family="'Outfit', sans-serif" font-size="8">Two-factor auth enabled</text>
+      </g>
+    </g>
+
+    <!-- Right: Smartphone / Mobile App & Web App Guide Mockup -->
+    <g transform="translate(210, 42)">
+      <!-- Web App Guide card -->
+      <rect width="165" height="82" rx="8" fill="#4338CA" stroke="#6366F1" stroke-width="1.5" />
+      <text x="14" y="24" fill="#FFFFFF" font-family="'Lilita One', sans-serif" font-size="13">Web App User Guide</text>
+      <text x="14" y="38" fill="#C7D2FE" font-family="'Outfit', sans-serif" font-size="8">Explore Our Other Features</text>
+      <rect x="14" y="50" width="70" height="20" rx="10" fill="#FFFFFF" />
+      <text x="24" y="63" fill="#4338CA" font-family="'Outfit', sans-serif" font-size="8" font-weight="bold">Download PDF</text>
+
+      <!-- Mobile App Guide card -->
+      <g transform="translate(0, 93)">
+        <rect width="165" height="82" rx="8" fill="#1E1B4B" stroke="#8B5CF6" stroke-width="1.5" />
+        <text x="14" y="24" fill="#FFFFFF" font-family="'Lilita One', sans-serif" font-size="13">Mobile App User Guide</text>
+        <text x="14" y="38" fill="#DDD6FE" font-family="'Outfit', sans-serif" font-size="8">iOS &amp; Android HR Management</text>
+        <rect x="14" y="50" width="70" height="20" rx="10" fill="#8B5CF6" />
+        <text x="24" y="63" fill="#FFFFFF" font-family="'Outfit', sans-serif" font-size="8" font-weight="bold">Download App</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Tag Pill -->
+  <g transform="translate(24, 275)">
+    <rect width="120" height="28" rx="14" fill="#6366F1" stroke="#000000" stroke-width="1.5" />
+    <text x="14" y="18" fill="#FFFFFF" font-family="'Lilita One', sans-serif" font-size="12">WEB UI/UX · 2024</text>
+  </g>
+</svg>

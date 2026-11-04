@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 320" fill="none">
+  <defs>
+    <linearGradient id="segariBg" x1="0" y1="0" x2="480" y2="320" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#191544" />
+      <stop offset="100%" stop-color="#0E0B28" />
+    </linearGradient>
+    <linearGradient id="orangeMascot" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FB923C" />
+      <stop offset="100%" stop-color="#EA580C" />
+    </linearGradient>
+  </defs>
+
+  <rect width="480" height="320" rx="16" fill="url(#segariBg)" />
+
+  <g transform="translate(45, 25)">
+    <!-- Mascot Showcase Canvas -->
+    <rect width="390" height="235" rx="12" fill="#042F2E" stroke="#10B981" stroke-width="2.5" />
+    
+    <!-- Top Bar -->
+    <rect width="390" height="30" rx="12" fill="#02201F" />
+    <text x="16" y="20" fill="#34D399" font-family="'Lilita One', sans-serif" font-size="14">SEGARI — MASCOT &amp; BRAND DESIGN</text>
+    <text x="250" y="20" fill="#A7F3D0" font-family="'Outfit', sans-serif" font-size="9">Daily Fresh Grocery App Ecosystem</text>
+
+    <!-- 4 Mascot Characters Grid -->
+    <!-- Mascot 1: Orange Veggie Mascot with Hat -->
+    <g transform="translate(20, 45)">
+      <rect width="80" height="110" rx="8" fill="#064E3B" stroke="#059669" stroke-width="1.5" />
+      <!-- Body -->
+      <circle cx="40" cy="55" r="26" fill="url(#orangeMascot)" stroke="#7C2D12" stroke-width="1.5" />
+      <!-- Green Leaf Hat -->
+      <path d="M40 28 C35 15, 25 18, 28 26 Z" fill="#22C55E" />
+      <path d="M40 28 C45 15, 55 18, 52 26 Z" fill="#22C55E" />
+      <!-- Eyes & Smile -->
+      <circle cx="34" cy="50" r="3" fill="#1C1917" />
+      <circle cx="46" cy="50" r="3" fill="#1C1917" />
+      <path d="M36 60 Q40 65 44 60" stroke="#1C1917" stroke-width="2" fill="none" stroke-linecap="round" />
+      <!-- Label -->
+      <text x="14" y="98" fill="#FDBA74" font-family="'Outfit', sans-serif" font-size="8" font-weight="bold">MASCOT A</text>
+    </g>
+
+    <!-- Mascot 2: Carrot Delivery on Scooter -->
+    <g transform="translate(110, 45)">
+      <rect width="80" height="110" rx="8" fill="#064E3B" stroke="#059669" stroke-width="1.5" />
+      <circle cx="40" cy="45" r="20" fill="#F97316" stroke="#9A3412" stroke-width="1.5" />
+      <circle cx="35" cy="42" r="2.5" fill="#1C1917" />
+      <circle cx="45" cy="42" r="2.5" fill="#1C1917" />
+      <path d="M37 50 Q40 54 43 50" stroke="#1C1917" stroke-width="1.5" fill="none" />
+      <!-- Scooter -->
+      <rect x="20" y="65" width="40" height="12" rx="4" fill="#10B981" />
+      <circle cx="28" cy="80" r="6" fill="#1E293B" stroke="#F1F5F9" stroke-width="1" />
+      <circle cx="52" cy="80" r="6" fill="#1E293B" stroke="#F1F5F9" stroke-width="1" />
+      <text x="14" y="98" fill="#34D399" font-family="'Outfit', sans-serif" font-size="8" font-weight="bold">DELIVERY</text>
+    </g>
+
+    <!-- Mascot 3: Happy Fruit Family -->
+    <g transform="translate(200, 45)">
+      <rect width="80" height="110" rx="8" fill="#064E3B" stroke="#059669" stroke-width="1.5" />
+      <circle cx="32" cy="50" r="18" fill="#EF4444" stroke="#7F1D1D" stroke-width="1.5" />
+      <circle cx="52" cy="55" r="16" fill="#FACC15" stroke="#713F12" stroke-width="1.5" />
+      <circle cx="30" cy="48" r="2" fill="#FFFFFF" />
+      <circle cx="50" cy="52" r="2" fill="#1E293B" />
+      <text x="14" y="98" fill="#FCA5A5" font-family="'Outfit', sans-serif" font-size="8" font-weight="bold">FAMILY PACK</text>
+    </g>
+
+    <!-- Mascot 4: Grocery Packaging Box -->
+    <g transform="translate(290, 45)">
+      <rect width="80" height="110" rx="8" fill="#064E3B" stroke="#059669" stroke-width="1.5" />
+      <polygon points="20,40 40,25 60,40 60,75 20,75" fill="#F59E0B" stroke="#78350F" stroke-width="1.5" />
+      <text x="28" y="55" fill="#78350F" font-family="'Lilita One', sans-serif" font-size="9">SEGARI</text>
+      <text x="14" y="98" fill="#FDE68A" font-family="'Outfit', sans-serif" font-size="8" font-weight="bold">PACKAGING</text>
+    </g>
+
+    <!-- Bottom Promo Banner (Belanja Pas Gajian Cashback 150rb) -->
+    <g transform="translate(20, 165)">
+      <rect width="350" height="55" rx="8" fill="#0F766E" stroke="#2DD4BF" stroke-width="1" />
+      <circle cx="30" cy="28" r="16" fill="#F59E0B" />
+      <text x="24" y="33" fill="#120E2E" font-family="'Lilita One', sans-serif" font-size="14">%</text>
+      <text x="56" y="25" fill="#FFFFFF" font-family="'Lilita One', sans-serif" font-size="14">Belanja Pas Gajian Dapat Cashback Rp 150.000</text>
+      <text x="56" y="40" fill="#CCFBF1" font-family="'Outfit', sans-serif" font-size="9">Social media campaign assets, in-app badges, sticker packs &amp; delivery bags.</text>
+    </g>
+  </g>
+
+  <!-- Tag Pill -->
+  <g transform="translate(24, 275)">
+    <rect width="115" height="28" rx="14" fill="#10B981" stroke="#000000" stroke-width="1.5" />
+    <text x="14" y="18" fill="#120E2E" font-family="'Lilita One', sans-serif" font-size="12">SEGARI · 2024</text>
+  </g>
+</svg>

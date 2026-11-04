@@ -1,0 +1,9 @@
+{
+  "name": "marmo-landing-page",
+  "version": "1.0.0",
+  "description": "Marmo Production House official landing page",
+  "scripts": {
+    "start": "agy-node live-server.js",
+    "serve": "agy-node live-server.js"
+  }
+}

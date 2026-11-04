@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 320" fill="none">
+  <defs>
+    <linearGradient id="belpinBg" x1="0" y1="0" x2="480" y2="320" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#191544" />
+      <stop offset="100%" stop-color="#0E0B28" />
+    </linearGradient>
+    <linearGradient id="reelGrad1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#EC4899" />
+      <stop offset="100%" stop-color="#8B5CF6" />
+    </linearGradient>
+    <linearGradient id="reelGrad2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F59E0B" />
+      <stop offset="100%" stop-color="#EF4444" />
+    </linearGradient>
+    <linearGradient id="reelGrad3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#06B6D4" />
+      <stop offset="100%" stop-color="#3B82F6" />
+    </linearGradient>
+  </defs>
+
+  <rect width="480" height="320" rx="16" fill="url(#belpinBg)" />
+
+  <!-- 3 Smartphone Reels mockup frames in perspective -->
+  <g transform="translate(60, 25)">
+    <!-- Reel 1: Viral Sketch -->
+    <g transform="translate(0, 15) rotate(-4)">
+      <rect width="110" height="195" rx="14" fill="#0F172A" stroke="#EC4899" stroke-width="2.5" />
+      <rect x="6" y="8" width="98" height="179" rx="10" fill="url(#reelGrad1)" opacity="0.9" />
+      <!-- Dialogue Bubble -->
+      <rect x="12" y="25" width="86" height="34" rx="8" fill="#FFFFFF" />
+      <text x="18" y="40" fill="#0F172A" font-family="'Outfit', sans-serif" font-size="7" font-weight="bold">"menurut lo bagus</text>
+      <text x="18" y="50" fill="#0F172A" font-family="'Outfit', sans-serif" font-size="7" font-weight="bold">pakai jedai gini?"</text>
+      <!-- Reel actions -->
+      <circle cx="90" cy="110" r="4" fill="#FFFFFF" />
+      <circle cx="90" cy="125" r="4" fill="#FFFFFF" />
+      <circle cx="90" cy="140" r="4" fill="#FFFFFF" />
+      <text x="12" y="172" fill="#FFFFFF" font-family="'Outfit', sans-serif" font-size="8" font-weight="700">@belpin.id</text>
+    </g>
+
+    <!-- Reel 2: HP Pavilion x360 Yoga Feature (Center, prominent) -->
+    <g transform="translate(125, 0)">
+      <rect width="118" height="215" rx="16" fill="#0F172A" stroke="#FF9E1B" stroke-width="3" />
+      <rect x="6" y="8" width="106" height="199" rx="12" fill="url(#reelGrad2)" opacity="0.95" />
+      <!-- Top header -->
+      <rect x="18" y="20" width="82" height="26" rx="6" fill="#000000" opacity="0.75" />
+      <text x="24" y="32" fill="#FEF08A" font-family="'Lilita One', sans-serif" font-size="10">GET READY LOOK</text>
+      <text x="24" y="42" fill="#FFFFFF" font-family="'Outfit', sans-serif" font-size="6" font-weight="bold">With HP Pavilion X360 Yoga</text>
+
+      <!-- Center product / laptop graphic -->
+      <rect x="22" y="75" width="74" height="46" rx="4" fill="#1E293B" stroke="#F1F5F9" stroke-width="1.5" />
+      <polygon points="16,121 102,121 96,128 22,128" fill="#CBD5E1" />
+      <circle cx="59" cy="98" r="8" fill="#FF9E1B" />
+
+      <!-- Yellow Cart / CTA button -->
+      <rect x="16" y="145" width="86" height="24" rx="12" fill="#FACC15" stroke="#713F12" stroke-width="1" />
+      <text x="24" y="160" fill="#713F12" font-family="'Outfit', sans-serif" font-size="8" font-weight="bold">🛒 Cek Keranjang Kuning</text>
+
+      <!-- Social stats -->
+      <text x="16" y="195" fill="#FFFFFF" font-family="'Outfit', sans-serif" font-size="8" font-weight="700">Viral 1.2M Views</text>
+    </g>
+
+    <!-- Reel 3: Office trend skit -->
+    <g transform="translate(255, 15) rotate(4)">
+      <rect width="110" height="195" rx="14" fill="#0F172A" stroke="#06B6D4" stroke-width="2.5" />
+      <rect x="6" y="8" width="98" height="179" rx="10" fill="url(#reelGrad3)" opacity="0.9" />
+      <rect x="12" y="30" width="86" height="30" rx="6" fill="#FFFFFF" opacity="0.9" />
+      <text x="18" y="44" fill="#0F172A" font-family="'Outfit', sans-serif" font-size="7" font-weight="bold">"Time for me to be</text>
+      <text x="18" y="53" fill="#0F172A" font-family="'Outfit', sans-serif" font-size="7" font-weight="bold">productive!"</text>
+      <circle cx="55" cy="115" r="14" fill="#FFFFFF" opacity="0.8" />
+      <polygon points="52,108 62,115 52,122" fill="#06B6D4" />
+      <text x="12" y="172" fill="#FFFFFF" font-family="'Outfit', sans-serif" font-size="8" font-weight="700">BELPIN TECH</text>
+    </g>
+  </g>
+
+  <!-- Tag Pill -->
+  <g transform="translate(24, 275)">
+    <rect width="105" height="28" rx="14" fill="#EC4899" stroke="#000000" stroke-width="1.5" />
+    <text x="16" y="18" fill="#FFFFFF" font-family="'Lilita One', sans-serif" font-size="12">REELS · 2025</text>
+  </g>
+</svg>

@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 320" fill="none">
+  <defs>
+    <linearGradient id="bcaBg" x1="0" y1="0" x2="480" y2="320" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#191544" />
+      <stop offset="100%" stop-color="#0E0B28" />
+    </linearGradient>
+    <linearGradient id="bcaCard1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0060AE" />
+      <stop offset="100%" stop-color="#002D62" />
+    </linearGradient>
+    <linearGradient id="flazzGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0284C7" />
+      <stop offset="100%" stop-color="#0369A1" />
+    </linearGradient>
+  </defs>
+
+  <rect width="480" height="320" rx="16" fill="url(#bcaBg)" />
+
+  <g transform="translate(45, 25)">
+    <!-- Main Banner: Flazz Promo Card -->
+    <g transform="translate(0, 0)">
+      <rect width="235" height="135" rx="12" fill="url(#bcaCard1)" stroke="#38BDF8" stroke-width="2" />
+      <rect x="14" y="14" width="45" height="16" rx="4" fill="#FFFFFF" />
+      <text x="20" y="26" fill="#0060AE" font-family="'Outfit', sans-serif" font-size="9" font-weight="900">BCA</text>
+      
+      <text x="14" y="52" fill="#BAE6FD" font-family="'Outfit', sans-serif" font-size="9" font-weight="700">Tingkatkan Terus Transaksi</text>
+      <text x="14" y="66" fill="#FFFFFF" font-family="'Lilita One', sans-serif" font-size="14">&amp; DAPATKAN FLAZZ BCA</text>
+
+      <!-- Flazz Card Graphic -->
+      <g transform="translate(14, 80)">
+        <rect width="115" height="42" rx="6" fill="url(#flazzGrad)" stroke="#FFFFFF" stroke-width="1" />
+        <text x="10" y="24" fill="#FEF08A" font-family="'Lilita One', sans-serif" font-size="12">Flazz</text>
+        <text x="10" y="36" fill="#FFFFFF" font-family="'Outfit', sans-serif" font-size="9" font-weight="bold">Rp1.000.000</text>
+      </g>
+      <!-- Cashback badge -->
+      <circle cx="185" cy="85" r="28" fill="#F59E0B" stroke="#FFFFFF" stroke-width="2" />
+      <text x="165" y="82" fill="#FFFFFF" font-family="'Outfit', sans-serif" font-size="7" font-weight="bold">CASHBACK</text>
+      <text x="163" y="94" fill="#120E2E" font-family="'Lilita One', sans-serif" font-size="10">Rp 1,6 Jt</text>
+    </g>
+
+    <!-- Right Side: Debit / Credit Card & Shopping Basket Banner -->
+    <g transform="translate(250, 0)">
+      <rect width="140" height="135" rx="12" fill="#0284C7" stroke="#38BDF8" stroke-width="2" />
+      <text x="15" y="25" fill="#FFFFFF" font-family="'Lilita One', sans-serif" font-size="12">Diskon 5%</text>
+      <text x="15" y="38" fill="#E0F2FE" font-family="'Outfit', sans-serif" font-size="8" font-weight="bold">Dengan Kartu Kredit BCA</text>
+      <!-- Shopping Basket Graphic -->
+      <rect x="25" y="55" width="90" height="45" rx="6" fill="#EF4444" stroke="#991B1B" stroke-width="1.5" />
+      <text x="40" y="82" fill="#FFFFFF" font-family="'Lilita One', sans-serif" font-size="11">SUPERMARKET</text>
+      <circle cx="45" cy="115" r="8" fill="#FCD34D" />
+      <circle cx="95" cy="115" r="8" fill="#FCD34D" />
+    </g>
+
+    <!-- Bottom: WhatsApp & myBCA App UI Banner -->
+    <g transform="translate(0, 150)">
+      <rect width="390" height="75" rx="10" fill="#0A2540" stroke="#0060AE" stroke-width="1.5" />
+      <rect x="15" y="15" width="45" height="45" rx="10" fill="#25D366" />
+      <!-- WhatsApp phone icon -->
+      <circle cx="37" cy="37" r="12" fill="#FFFFFF" />
+      <path d="M34 32 C34 32 32 34 32 36 C32 39 35 42 38 42 C40 42 42 40 42 40 L40 37 L38 38 C37 38 36 37 36 36 L37 34 Z" fill="#25D366" />
+
+      <text x="75" y="34" fill="#FFFFFF" font-family="'Lilita One', sans-serif" font-size="14">myBCA &amp; WhatsApp Blast Campaigns</text>
+      <text x="75" y="50" fill="#94A3B8" font-family="'Outfit', sans-serif" font-size="9">Omnichannel visual promotional designs across web, mobile apps, and direct messaging.</text>
+
+      <rect x="315" y="24" width="60" height="26" rx="13" fill="#0060AE" />
+      <text x="328" y="41" fill="#FFFFFF" font-family="'Outfit', sans-serif" font-size="9" font-weight="bold">BCA PROMO</text>
+    </g>
+  </g>
+
+  <!-- Tag Pill -->
+  <g transform="translate(24, 275)">
+    <rect width="90" height="28" rx="14" fill="#0060AE" stroke="#000000" stroke-width="1.5" />
+    <text x="14" y="18" fill="#FFFFFF" font-family="'Lilita One', sans-serif" font-size="12">BCA · 2024</text>
+  </g>
+</svg>

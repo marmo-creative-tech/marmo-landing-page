@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marmo Creative! Showroom — Production House &amp; Portfolio</title>
+  <meta name="description" content="Marmo Creative! Showroom. Explore our signature corporate profile films, viral reels, graphic design, and brand mascot systems. Leave a mark. No fluff, just magic.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/sprites/marmo_icon_new.png">
+
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body class="creative-mode">
+
+  <!-- ===================================================================
+       HEADER & NAVIGATION BAR
+       =================================================================== -->
+  <header class="site-header" id="siteHeader">
+    <div class="container nav-wrapper">
+      <!-- Logo: MARMO with Mandrill Mascot -->
+      <a href="index.html" class="brand-logo" aria-label="Marmo Production House">
+        <div class="logo-mascot-wrap">
+          <img src="assets/images/sprites/marmo_icon_new.png" alt="Marmo Mascot" class="logo-mascot-img">
+        </div>
+        <div class="logo-text-group">
+          <span class="logo-brand-name">MARMO</span>
+          <span class="logo-brand-sub">PRODUCTION HOUSE</span>
+        </div>
+      </a>
+
+      <!-- Navigation Links -->
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="index.html#about" class="nav-link">About Us</a></li>
+          <li><a href="index.html#services" class="nav-link">What We Serve</a></li>
+          <li><a href="#creativeShowroom" class="nav-link active">Creative Showroom</a></li>
+          <li><a href="index.html#team" class="nav-link">Marmo People!</a></li>
+          <li><a href="tech.html" class="nav-link" style="color: var(--tech-purple-light);">Marmo Tech!</a></li>
+          <li><a href="#contact" class="nav-link">Contact Us</a></li>
+        </ul>
+      </nav>
+
+      <!-- Business Switcher Pill in Header -->
+      <div class="business-toggle-pill" id="bizTogglePill">
+        <a href="#creativeShowroom" class="biz-btn creative-btn active" id="btnMarmoCreative" aria-label="Marmo Creative Active">
+          <span>🎨</span> Marmo Creative!
+        </a>
+        <a href="tech.html" class="biz-btn tech-btn" id="btnMarmoTech" aria-label="Switch to Marmo Tech">
+          <span style="color: #FFC72C;">⚡</span> Marmo Tech!
+        </a>
+      </div>
+
+      <!-- Header CTA -->
+      <a href="#contact" class="header-cta-btn">Let's Talk Magic</a>
+
+      <!-- Mobile Hamburger Button -->
+      <button class="mobile-menu-toggle" aria-label="Toggle Navigation Menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===================================================================
+       HERO SECTION: MARMO CREATIVE!
+       Featuring the official Marmo Creative words image
+       =================================================================== -->
+  <section class="page-hero" id="creativeHero">
+    <div class="container page-hero-inner">
+      <!-- Badge Pill -->
+      <div class="hero-badge-pill" style="margin-bottom: 24px;">
+        <span class="badge-sparkle">✦</span>
+        <span class="badge-text" style="color: var(--color-orange);">OFFICIAL MARMO CREATIVE! SHOWROOM</span>
+        <span class="badge-sparkle">✦</span>
+      </div>
+
+      <!-- Official Marmo Creative Words Graphic (Requested by User) -->
+      <div class="page-hero-logo-wrap">
+        <img src="assets/images/sprites/marmo_creative_logo_clean.png" alt="Marmo Creative! Showroom Words" class="page-hero-logo-img">
+      </div>
+
+      <!-- Hero Headline -->
+      <h1 class="page-hero-title">
+        WE BRING VISUAL <span class="text-orange">MAGIC</span> TO LIFE
+      </h1>
+
+      <!-- Slogan -->
+      <p class="hero-subtitle-slogan">
+        <span class="highlight">leave a mark.</span> no fluff, just magic.
+      </p>
+
+      <p class="page-hero-desc">
+        Welcome to the creative engine of Marmo. From 4K cinematic corporate films and high-converting marketing booklets to viral social reels, iconic mascot characters, and futuristic generative AI staging.
+      </p>
+
+      <!-- Action Buttons -->
+      <div class="page-hero-actions">
+        <a href="#creativeShowroom" class="cta-btn-creative">
+          <span class="cta-icon">🎨</span>
+          <span>Explore Showroom Works</span>
+          <i class="fa-solid fa-arrow-down"></i>
+        </a>
+        <a href="assets/Marmo_Creative_Portfolio.pdf" target="_blank" class="btn-secondary">
+          <i class="fa-solid fa-file-pdf" style="color: var(--color-orange);"></i>
+          <span>Official 12-Page PDF</span>
+        </a>
+        <a href="tech.html" class="cta-btn-tech">
+          <span class="cta-icon">⚡</span>
+          <span>Switch to Marmo Tech!</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       MARMO CREATIVE! SHOWROOM PORTFOLIO
+       All 8 Showcase Projects from the Official Portfolio PDF
+       =================================================================== -->
+  <section class="portfolio-section" id="creativeShowroom">
+    <div class="container">
+      <div class="section-header-center">
+        <div class="section-tag-pill" style="border-color: var(--color-orange);">
+          <span class="section-tag-text" style="color: var(--color-orange);">🎨 CURATED WORKS &amp; CASE STUDIES</span>
+        </div>
+        <h2 class="section-title">OUR WORKS &amp; <span class="text-orange">PORTFOLIO</span></h2>
+        <p class="section-desc">
+          Click on any case study below to view the detailed brief, deliverables, and production breakdown.
+        </p>
+      </div>
+
+      <!-- Filter Tabs -->
+      <div class="portfolio-filter-tabs">
+        <button class="filter-btn active" data-filter="all">All Projects</button>
+        <button class="filter-btn" data-filter="profile">Company Profile</button>
+        <button class="filter-btn" data-filter="video">Video &amp; Reels</button>
+        <button class="filter-btn" data-filter="graphic">Graphic &amp; Mascot</button>
+        <button class="filter-btn" data-filter="web">Web &amp; UI</button>
+      </div>
+
+      <!-- Project Cards Grid (8 Projects from PDF) -->
+      <div class="portfolio-grid" id="projectGrid">
+        <!-- 1. ESCO Lifescience Group -->
+        <article class="portfolio-card" data-category="profile">
+          <div class="port-card-thumb-wrap logo-card-wrap">
+            <span class="port-format-badge">BOOKLET</span>
+            <span class="port-year-badge">2023</span>
+            <img src="assets/images/portfolio/esco_logo.png" alt="Esco Lifescience Group Company Profile" class="port-card-img logo-display">
+          </div>
+          <div class="port-card-content">
+            <h3 class="port-card-title">Esco Lifescience Group Booklet</h3>
+            <p class="port-card-desc">
+              Esco is an international manufacturer of laboratory and biopharma equipment. Booklet highlighting their journey, vision, and transition to life science.
+            </p>
+            <div class="port-card-footer">
+              <span style="font-size: 12px; color: var(--color-orange); font-weight: 700;">Client: Esco Lifescience Group</span>
+              <button class="view-case-btn" data-project="esco">
+                <span>View Case</span>
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- 2. Dharma Polimetal Tbk -->
+        <article class="portfolio-card" data-category="profile">
+          <div class="port-card-thumb-wrap logo-card-wrap">
+            <span class="port-format-badge" style="border-color: #F59E0B; color: #F59E0B;">VIDEO</span>
+            <span class="port-year-badge">2024</span>
+            <img src="assets/images/portfolio/dharma_logo.png" alt="Dharma Polimetal Tbk Video Profile" class="port-card-img logo-display">
+          </div>
+          <div class="port-card-content">
+            <h3 class="port-card-title">Dharma Polimetal Tbk Video Profile</h3>
+            <p class="port-card-desc">
+              Specialized cutting tools industrial manufacturing video profile. Showcasing 500T &amp; 300T Press Machines and partnerships with Honda, Toyota, and Yamaha.
+            </p>
+            <div class="port-card-footer">
+              <span style="font-size: 12px; color: #F59E0B; font-weight: 700;">Client: Dharma Polimetal Tbk</span>
+              <button class="view-case-btn" data-project="dharma">
+                <span>View Case</span>
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- 3. Belpin Blessin Indonesia -->
+        <article class="portfolio-card" data-category="video">
+          <div class="port-card-thumb-wrap logo-card-wrap bg-dark-black">
+            <span class="port-format-badge" style="border-color: #EC4899; color: #EC4899;">REELS</span>
+            <span class="port-year-badge">2025</span>
+            <img src="assets/images/portfolio/belpin_logo.png" alt="Belpin Blessin Indonesia Social Media" class="port-card-img logo-display">
+          </div>
+          <div class="port-card-content">
+            <h3 class="port-card-title">Belpin Blessin Indonesia Reels</h3>
+            <p class="port-card-desc">
+              Trend-based viral reels and product promotions for IT hardware &amp; software (HP Pavilion x360 Yoga) driving brand awareness and e-commerce checkout.
+            </p>
+            <div class="port-card-footer">
+              <span style="font-size: 12px; color: #EC4899; font-weight: 700;">Client: Belpin Blessin Indonesia</span>
+              <button class="view-case-btn" data-project="belpin">
+                <span>View Case</span>
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- 4. BCA Omnichannel Campaigns -->
+        <article class="portfolio-card" data-category="graphic">
+          <div class="port-card-thumb-wrap logo-card-wrap bg-dark-blue">
+            <span class="port-format-badge" style="border-color: #0060AE; color: #38BDF8;">CAMPAIGN</span>
+            <span class="port-year-badge">2024</span>
+            <img src="assets/images/portfolio/bca_logo.png" alt="BCA Omnichannel Marketing" class="port-card-img logo-display">
+          </div>
+          <div class="port-card-content">
+            <h3 class="port-card-title">BCA Omnichannel Designs</h3>
+            <p class="port-card-desc">
+              High-converting digital ad designs for WhatsApp blasts, email newsletters, myBCA app, and website featuring Flazz Rp1.000.000 &amp; credit card promotions.
+            </p>
+            <div class="port-card-footer">
+              <span style="font-size: 12px; color: #38BDF8; font-weight: 700;">Client: Bank Central Asia (BCA)</span>
+              <button class="view-case-btn" data-project="bca">
+                <span>View Case</span>
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- 5. Summarecon Group -->
+        <article class="portfolio-card" data-category="video">
+          <div class="port-card-thumb-wrap logo-card-wrap">
+            <span class="port-format-badge" style="border-color: #EA580C; color: #FB923C;">CULTURE VIDEO</span>
+            <span class="port-year-badge">2024</span>
+            <img src="assets/images/portfolio/summarecon_logo.png" alt="Summarecon Group Career Culture" class="port-card-img logo-display">
+          </div>
+          <div class="port-card-content">
+            <h3 class="port-card-title">Summarecon Group Culture Videos</h3>
+            <p class="port-card-desc">
+              Employer branding reels providing authentic insight into internal sports activities, 17 Agustus celebrations, and dynamic job vacancy recruitment clips.
+            </p>
+            <div class="port-card-footer">
+              <span style="font-size: 12px; color: #FB923C; font-weight: 700;">Client: Summarecon Group</span>
+              <button class="view-case-btn" data-project="summarecon">
+                <span>View Case</span>
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- 6. Fortius Web UI/UX -->
+        <article class="portfolio-card" data-category="web">
+          <div class="port-card-thumb-wrap">
+            <span class="port-format-badge" style="border-color: #6366F1; color: #A5B4FC;">WEB UI/UX</span>
+            <span class="port-year-badge">2024</span>
+            <img src="assets/images/portfolio/fortius_web_preview.svg" alt="Fortius Web UI/UX" class="port-card-img">
+          </div>
+          <div class="port-card-content">
+            <h3 class="port-card-title">Fortius Web HR Platform UI</h3>
+            <p class="port-card-desc">
+              Product marketing design and interactive web app user guides enabling HR teams to optimize attendance tracking, leave requests, and payroll calculation.
+            </p>
+            <div class="port-card-footer">
+              <span style="font-size: 12px; color: #A5B4FC; font-weight: 700;">Client: Fortius HRIS</span>
+              <button class="view-case-btn" data-project="fortius_web">
+                <span>View Case</span>
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- 7. Segari Mascot & Packaging -->
+        <article class="portfolio-card" data-category="graphic">
+          <div class="port-card-thumb-wrap">
+            <span class="port-format-badge" style="border-color: #10B981; color: #34D399;">MASCOT</span>
+            <span class="port-year-badge">2024</span>
+            <img src="assets/images/portfolio/segari_preview.svg" alt="Segari Mascot & Packaging" class="port-card-img">
+          </div>
+          <div class="port-card-content">
+            <h3 class="port-card-title">Segari Mascot &amp; Packaging</h3>
+            <p class="port-card-desc">
+              From early sketch concept to official mascot character system. Featured across Segari social media campaigns, in-app promotions, and fresh grocery packaging.
+            </p>
+            <div class="port-card-footer">
+              <span style="font-size: 12px; color: #34D399; font-weight: 700;">Client: Segari</span>
+              <button class="view-case-btn" data-project="segari">
+                <span>View Case</span>
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- 8. Fortius Social Media HR -->
+        <article class="portfolio-card" data-category="video">
+          <div class="port-card-thumb-wrap">
+            <span class="port-format-badge" style="border-color: #7C3AED; color: #C4B5FD;">CAROUSELS</span>
+            <span class="port-year-badge">2024-25</span>
+            <img src="assets/images/portfolio/fortius_social_preview.svg" alt="Fortius Social Media HR" class="port-card-img">
+          </div>
+          <div class="port-card-content">
+            <h3 class="port-card-title">Fortius HR Social Media</h3>
+            <p class="port-card-desc">
+              Thought leadership educational carousels tackling workplace burnout, HR tips, and relatable Gen Z corporate memes that generate organic virality.
+            </p>
+            <div class="port-card-footer">
+              <span style="font-size: 12px; color: #C4B5FD; font-weight: 700;">Client: Fortius HRIS</span>
+              <button class="view-case-btn" data-project="fortius_social">
+                <span>View Case</span>
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </button>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- Download Original PDF Action Bar -->
+      <div class="pdf-download-bar" style="margin-top: 50px;">
+        <div class="pdf-info-group">
+          <div class="pdf-icon-box">
+            <i class="fa-solid fa-file-pdf"></i>
+          </div>
+          <div>
+            <h4 class="pdf-title">Marmo Creative Portfolio (Official PDF)</h4>
+            <p class="pdf-sub">Full 12-page presentation with complete project documentation &amp; briefs.</p>
+          </div>
+        </div>
+        <div class="pdf-actions">
+          <a href="assets/Marmo_Creative_Portfolio.pdf" target="_blank" class="btn-secondary">
+            <i class="fa-solid fa-eye"></i> View PDF
+          </a>
+          <a href="assets/Marmo_Creative_Portfolio.pdf" download="Marmo_Creative_Portfolio.pdf" class="cta-btn-creative" style="padding: 10px 22px; font-size: 14px;">
+            <i class="fa-solid fa-download"></i> Download PDF
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       CONTACT US (MAGIC BANNER)
+       =================================================================== -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <div class="contact-magic-banner">
+        <div class="banner-tagline-pre">✦ READY TO LAUNCH?</div>
+        <h2 class="banner-main-headline">
+          WE HAD FUN, <span class="orange-highlight">LEAVE A MARK.</span><br>
+          NO FLUFF, JUST MAGIC.
+        </h2>
+        <p class="banner-sub-text">
+          Got a bold creative project or production in mind? Drop your email below, and our team will get in touch to bring your vision to life.
+        </p>
+
+        <!-- CTA Form to Input Email -->
+        <form class="contact-cta-form" id="magicContactForm">
+          <input type="email" class="contact-email-input" placeholder="Enter your business email address..." required aria-label="Your email address">
+          <button type="submit" class="contact-submit-btn">
+            <span>Let's Talk Magic</span>
+            <i class="fa-solid fa-paper-plane"></i>
+          </button>
+        </form>
+
+        <!-- Direct Contact Chips -->
+        <div class="direct-contact-chips">
+          <a href="mailto:m.rifqy512@gmail.com" class="contact-chip">
+            <i class="fa-solid fa-envelope" style="color: var(--color-orange);"></i>
+            <span>m.rifqy512@gmail.com</span>
+          </a>
+          <a href="https://wa.me/6281546118733" target="_blank" class="contact-chip">
+            <i class="fa-brands fa-whatsapp" style="color: #25D366;"></i>
+            <span>+62 815 4611 8733</span>
+          </a>
+          <span class="contact-chip" style="background: rgba(255, 158, 27, 0.1); border-color: var(--color-orange);">
+            <i class="fa-solid fa-location-dot" style="color: var(--color-orange);"></i>
+            <span>Ulujami Street No. 57, South Jakarta</span>
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       FOOTER INFORMATION
+       =================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <!-- Brand Info -->
+        <div class="footer-brand-column">
+          <div class="footer-logo-title">
+            <img src="assets/images/sprites/marmo_icon_new.png" alt="Marmo" style="width: 40px; height: 40px; object-fit: contain;">
+            <span>MARMO!</span>
+          </div>
+          <p class="footer-brand-desc">
+            Creative Production House &amp; Tech Studio based in South Jakarta. Leave a mark. No fluff, just magic.
+          </p>
+          <div class="footer-address-box">
+            <i class="fa-solid fa-map-pin"></i>
+            <span><strong>Marmo! Headquarters</strong><br>Ulujammin Street No. 57, South Jakarta, Indonesia</span>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-nav-list">
+            <li><a href="index.html" class="footer-nav-link">Home</a></li>
+            <li><a href="index.html#about" class="footer-nav-link">About Us</a></li>
+            <li><a href="index.html#services" class="footer-nav-link">What We Serve</a></li>
+            <li><a href="index.html#team" class="footer-nav-link">Marmo People!</a></li>
+            <li><a href="creative.html" class="footer-nav-link" style="color: var(--color-orange);">Marmo Creative! Showroom</a></li>
+            <li><a href="tech.html" class="footer-nav-link" style="color: var(--tech-purple-light);">Marmo Tech! Division</a></li>
+            <li><a href="#contact" class="footer-nav-link">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Services -->
+        <div>
+          <h4 class="footer-col-title">What We Serve</h4>
+          <ul class="footer-nav-list">
+            <li><a href="index.html#services" class="footer-nav-link">Company Profile Video</a></li>
+            <li><a href="index.html#services" class="footer-nav-link">Graphic Design &amp; Brand</a></li>
+            <li><a href="index.html#services" class="footer-nav-link">Long &amp; Short Video Editing</a></li>
+            <li><a href="index.html#services" class="footer-nav-link">AI Imaginary Generation</a></li>
+            <li><a href="tech.html" class="footer-nav-link">System &amp; Web Applications</a></li>
+          </ul>
+        </div>
+
+        <!-- Connect & Social Icons -->
+        <div>
+          <h4 class="footer-col-title">Connect With Us</h4>
+          <p style="font-size: 13px; color: var(--text-sub); margin-bottom: 14px;">
+            Follow our latest productions or chat directly on WhatsApp.
+          </p>
+          <div class="footer-social-group">
+            <a href="https://wa.me/6281546118733" target="_blank" class="social-icon-btn whatsapp" aria-label="Contact Marmo on WhatsApp">
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+            <a href="https://www.linkedin.com" target="_blank" class="social-icon-btn linkedin" aria-label="Visit Marmo on LinkedIn">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="https://instagram.com" target="_blank" class="social-icon-btn instagram" aria-label="Visit Marmo on Instagram">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://youtube.com" target="_blank" class="social-icon-btn" style="background: #18123C;" aria-label="Visit Marmo on YouTube">
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+          </div>
+          <div style="margin-top: 18px; font-size: 12px; color: var(--text-muted);">
+            Direct Phone: <a href="tel:+6281546118733" style="color: var(--color-orange); text-decoration: none; font-weight: bold;">+62 815 4611 8733</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom Copyright Bar -->
+      <div class="footer-bottom-bar">
+        <div>
+          &copy; 2026 <strong>MARMO PRODUCTION HOUSE</strong>. All rights reserved.
+        </div>
+        <div>
+          Built with <span style="color: var(--color-orange);">♥</span> and magic in South Jakarta.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===================================================================
+       MODAL: PROJECT CASE STUDY LIGHTBOX
+       =================================================================== -->
+  <div class="modal-overlay" id="projectModal">
+    <div class="modal-card-box">
+      <button class="modal-close-btn" aria-label="Close Case Study Modal">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <div class="modal-body">
+        <div style="display: flex; gap: 8px; margin-bottom: 12px; flex-wrap: wrap;">
+          <span id="modalFormat" class="port-format-badge" style="position: static;">FORMAT</span>
+          <span id="modalYear" class="port-year-badge" style="position: static;">YEAR</span>
+        </div>
+        <h2 id="modalTitle" class="comic-title" style="font-size: 28px; color: #FFF; margin-bottom: 6px;">Project Title</h2>
+        <h4 id="modalClient" style="font-size: 14px; color: var(--color-orange); margin-bottom: 20px;">Client Name</h4>
+
+        <div style="width: 100%; height: 260px; background: #0A081D; border-radius: var(--radius-md); overflow: hidden; margin-bottom: 24px; border: 1px solid rgba(255, 158, 27, 0.3);">
+          <img id="modalImg" src="" alt="Project Showcase" style="width: 100%; height: 100%; object-fit: contain;">
+        </div>
+
+        <h4 style="font-family: var(--font-display); font-size: 16px; color: #FFF; margin-bottom: 8px;">About The Project</h4>
+        <p id="modalDesc" style="font-size: 14px; color: var(--text-sub); line-height: 1.7; margin-bottom: 20px;">
+          Project description...
+        </p>
+
+        <h4 style="font-family: var(--font-display); font-size: 16px; color: #FFF; margin-bottom: 8px;">Key Deliverables</h4>
+        <ul id="modalDeliverables" style="font-size: 14px; color: var(--text-sub); line-height: 1.7; padding-left: 20px; margin-bottom: 28px;">
+        </ul>
+
+        <div style="display: flex; gap: 12px; justify-content: flex-end; flex-wrap: wrap;">
+          <a href="#contact" class="cta-btn-creative" style="padding: 10px 24px; font-size: 14px;" onclick="document.getElementById('projectModal').classList.remove('active'); document.body.style.overflow='';">
+            Start Similar Project
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Message -->
+  <div class="toast-notification" id="toastNotification">
+    Notification text here
+  </div>
+
+  <!-- Main JavaScript File -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" fill="none">
+  <defs>
+    <linearGradient id="editGrad" x1="0" y1="0" x2="400" y2="240" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#28205C" />
+      <stop offset="100%" stop-color="#120E2E" />
+    </linearGradient>
+    <linearGradient id="reelGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FF9E1B" />
+      <stop offset="100%" stop-color="#E040FB" />
+    </linearGradient>
+    <linearGradient id="audioGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00F5D4" />
+      <stop offset="100%" stop-color="#7B2CBF" />
+    </linearGradient>
+  </defs>
+
+  <rect width="400" height="240" rx="16" fill="url(#editGrad)" />
+  <circle cx="320" cy="50" r="100" fill="#FF9E1B" fill-opacity="0.1" />
+  <circle cx="90" cy="190" r="90" fill="#7353BA" fill-opacity="0.15" />
+
+  <!-- Orbit rings -->
+  <ellipse cx="200" cy="120" rx="165" ry="60" stroke="#FF9E1B" stroke-opacity="0.2" stroke-dasharray="4 6" />
+  <circle cx="65" cy="90" r="6" fill="#00F5D4" />
+
+  <!-- Timeline Interface Container -->
+  <g transform="translate(45, 30)">
+    <!-- Main Board -->
+    <rect x="0" y="0" width="310" height="175" rx="14" fill="#1B163E" stroke="#FF9E1B" stroke-width="2.5" />
+    
+    <!-- Top Bar -->
+    <rect x="0" y="0" width="310" height="26" rx="12" fill="#130F30" />
+    <circle cx="16" cy="13" r="4" fill="#FF5F56" />
+    <circle cx="28" cy="13" r="4" fill="#FFBD2E" />
+    <circle cx="40" cy="13" r="4" fill="#27C93F" />
+    <text x="56" y="17" fill="#CBD5E1" font-family="'Outfit', sans-serif" font-size="9" font-weight="600">Reels_Final_Render_4K.mp4</text>
+    <text x="250" y="17" fill="#FF9E1B" font-family="'Outfit', sans-serif" font-size="9" font-weight="700">00:24:18</text>
+
+    <!-- Left: 9:16 Reels Vertical Preview -->
+    <g transform="translate(18, 38)">
+      <rect x="0" y="0" width="65" height="115" rx="10" fill="#0A081D" stroke="#52488E" stroke-width="2" />
+      <rect x="5" y="8" width="55" height="92" rx="6" fill="url(#reelGrad)" opacity="0.85" />
+      <!-- Play Triangle -->
+      <circle cx="32" cy="54" r="14" fill="#FFFFFF" opacity="0.9" />
+      <polygon points="28,46 40,54 28,62" fill="#120E2E" />
+      <!-- Social Reel UI overlay dots -->
+      <circle cx="52" cy="65" r="3" fill="#FFFFFF" />
+      <circle cx="52" cy="75" r="3" fill="#FFFFFF" />
+      <circle cx="52" cy="85" r="3" fill="#FFFFFF" />
+      <text x="10" y="110" fill="#FFFFFF" font-size="6" font-family="sans-serif">@marmo.creative</text>
+    </g>
+
+    <!-- Right: Timeline Tracks -->
+    <g transform="translate(95, 38)">
+      <!-- Track V2 (Text/Overlay) -->
+      <rect x="0" y="0" width="200" height="22" rx="6" fill="#141031" stroke="#2B245A" stroke-width="1" />
+      <rect x="25" y="3" width="70" height="16" rx="4" fill="#FF9E1B" stroke="#120E2E" stroke-width="1" />
+      <text x="35" y="14" fill="#120E2E" font-size="8" font-family="sans-serif" font-weight="bold">TEXT HOOK</text>
+      <rect x="110" y="3" width="80" height="16" rx="4" fill="#FFCA3A" stroke="#120E2E" stroke-width="1" />
+      <text x="120" y="14" fill="#120E2E" font-size="8" font-family="sans-serif" font-weight="bold">SOUND FX</text>
+
+      <!-- Track V1 (Main Footage) -->
+      <rect x="0" y="28" width="200" height="26" rx="6" fill="#141031" stroke="#2B245A" stroke-width="1" />
+      <rect x="5" y="31" width="55" height="20" rx="4" fill="#7353BA" />
+      <rect x="65" y="31" width="60" height="20" rx="4" fill="#5E35B1" />
+      <rect x="130" y="31" width="65" height="20" rx="4" fill="#4527A0" />
+      <text x="75" y="44" fill="#FFFFFF" font-size="8" font-family="sans-serif">CLIP_02</text>
+
+      <!-- Track A1 (Audio Waveform) -->
+      <rect x="0" y="60" width="200" height="22" rx="6" fill="#141031" stroke="#2B245A" stroke-width="1" />
+      <rect x="10" y="63" width="180" height="16" rx="4" fill="url(#audioGrad)" opacity="0.8" />
+      <!-- Waveform peaks -->
+      <path d="M15 71 L25 66 L35 76 L45 65 L55 77 L65 67 L75 75 L85 64 L95 78 L105 68 L115 74 L125 65 L135 77 L145 69 L155 74 L165 66 L175 71" stroke="#120E2E" stroke-width="2" fill="none" stroke-linecap="round" />
+
+      <!-- Timeline Playhead Scrubber -->
+      <line x1="88" y1="-5" x2="88" y2="95" stroke="#FF9E1B" stroke-width="2.5" />
+      <polygon points="82,-5 94,-5 88,3" fill="#FF9E1B" />
+      <circle cx="88" cy="95" r="3" fill="#FF9E1B" />
+
+      <!-- Scissors icon -->
+      <g transform="translate(145, 90) scale(0.9)">
+        <circle cx="0" cy="8" r="4" fill="none" stroke="#FFDE59" stroke-width="1.5" />
+        <circle cx="0" cy="20" r="4" fill="none" stroke="#FFDE59" stroke-width="1.5" />
+        <line x1="3" y1="10" x2="16" y2="18" stroke="#FFDE59" stroke-width="1.5" />
+        <line x1="3" y1="18" x2="16" y2="10" stroke="#FFDE59" stroke-width="1.5" />
+      </g>
+    </g>
+  </g>
+
+  <!-- Sparkles -->
+  <polygon points="360,165 363,171 370,173 363,175 360,181 357,175 350,173 357,171" fill="#FF9E1B" />
+</svg>

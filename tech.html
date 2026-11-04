@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marmo Tech! — Digital Systems, Full-Stack &amp; Cloud Architecture</title>
+  <meta name="description" content="Marmo Tech! Division. Engineering high-performance web applications, algorithmic fleet management, fintech superapps, and AI experiences. Leave a mark. No fluff, just magic.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/sprites/marmo_icon_new.png">
+
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body class="tech-mode">
+
+  <!-- ===================================================================
+       HEADER & NAVIGATION BAR
+       =================================================================== -->
+  <header class="site-header" id="siteHeader">
+    <div class="container nav-wrapper">
+      <!-- Logo: MARMO with Mandrill Mascot -->
+      <a href="index.html" class="brand-logo" aria-label="Marmo Production House">
+        <div class="logo-mascot-wrap">
+          <img src="assets/images/sprites/marmo_icon_new.png" alt="Marmo Mascot" class="logo-mascot-img">
+        </div>
+        <div class="logo-text-group">
+          <span class="logo-brand-name">MARMO</span>
+          <span class="logo-brand-sub" style="color: var(--tech-purple-light);">TECH DIVISION</span>
+        </div>
+      </a>
+
+      <!-- Navigation Links -->
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="index.html#about" class="nav-link">About Us</a></li>
+          <li><a href="index.html#services" class="nav-link">What We Serve</a></li>
+          <li><a href="#techShowroom" class="nav-link active">Tech Portfolio</a></li>
+          <li><a href="index.html#team" class="nav-link">Marmo People!</a></li>
+          <li><a href="creative.html" class="nav-link" style="color: var(--color-orange);">Marmo Creative!</a></li>
+          <li><a href="#contact" class="nav-link">Contact Us</a></li>
+        </ul>
+      </nav>
+
+      <!-- Business Switcher Pill in Header -->
+      <div class="business-toggle-pill" id="bizTogglePill">
+        <a href="creative.html" class="biz-btn creative-btn" id="btnMarmoCreative" aria-label="Switch to Marmo Creative">
+          <span>🎨</span> Marmo Creative!
+        </a>
+        <a href="#techShowroom" class="biz-btn tech-btn active" id="btnMarmoTech" aria-label="Marmo Tech Active">
+          <span style="color: #FFC72C;">⚡</span> Marmo Tech!
+        </a>
+      </div>
+
+      <!-- Header CTA -->
+      <a href="#contact" class="header-cta-btn" style="background: linear-gradient(135deg, var(--tech-purple), #533B8E); border-color: var(--tech-gold);">Let's Build Systems</a>
+
+      <!-- Mobile Hamburger Button -->
+      <button class="mobile-menu-toggle" aria-label="Toggle Navigation Menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===================================================================
+       HERO SECTION: MARMO TECH!
+       Featuring the official Marmo Tech words image
+       =================================================================== -->
+  <section class="page-hero tech-hero-theme" id="techHero">
+    <div class="container page-hero-inner">
+      <!-- Badge Pill -->
+      <div class="hero-badge-pill" style="border-color: var(--tech-purple-light); background: rgba(115, 83, 186, 0.2); margin-bottom: 24px;">
+        <span class="badge-sparkle" style="color: var(--tech-gold);">⚡</span>
+        <span class="badge-text" style="color: var(--tech-gold);">MARMO TECH! DIGITAL &amp; SYSTEMS STUDIO</span>
+        <span class="badge-sparkle" style="color: var(--tech-gold);">⚡</span>
+      </div>
+
+      <!-- Official Marmo Tech Words Graphic (Requested by User) -->
+      <div class="page-hero-logo-wrap">
+        <img src="assets/images/sprites/marmo_tech_logo_clean.png" alt="Marmo Tech! Portfolio Logo Words" class="page-hero-logo-img">
+      </div>
+
+      <!-- Hero Headline -->
+      <h1 class="page-hero-title">
+        ENGINEERING DIGITAL <span class="text-purple">EXCELLENCE</span>
+      </h1>
+
+      <!-- Slogan -->
+      <p class="hero-subtitle-slogan">
+        <span class="highlight" style="color: var(--tech-gold);">leave a mark.</span> no fluff, just magic.
+      </p>
+
+      <p class="page-hero-desc">
+        Beyond creative storytelling. Marmo Tech engineers high-performance web applications, algorithmic logistics engines, fintech superapps, and automated cloud workflows. Built clean, deployed fast, scaled infinitely.
+      </p>
+
+      <!-- Action Buttons -->
+      <div class="page-hero-actions">
+        <a href="#techShowroom" class="cta-btn-tech">
+          <span class="cta-icon">⚡</span>
+          <span>Explore 6 Tech Works</span>
+          <i class="fa-solid fa-arrow-down"></i>
+        </a>
+        <a href="https://wa.me/6281546118733?text=Hi%20Marmo%20Tech!%20I'm%20interested%20in%20building%20a%20digital%20system." target="_blank" class="btn-secondary">
+          <i class="fa-brands fa-whatsapp" style="color: #25D366;"></i>
+          <span>Chat Direct on WhatsApp</span>
+        </a>
+        <a href="creative.html" class="cta-btn-creative">
+          <span class="cta-icon">🎨</span>
+          <span>Switch to Marmo Creative!</span>
+        </a>
+      </div>
+
+      <!-- Capabilities & Direct Contact Card (From Image 1) -->
+      <div class="tech-hero-box" style="margin-top: 60px; text-align: left;">
+        <div class="tech-logo-wrap">
+          <img src="assets/images/sprites/marmo_tech_card_snippet.png" alt="Marmo Tech Contact Card" class="tech-logo-img" style="border-radius: var(--radius-md);">
+        </div>
+        <div class="tech-info-card">
+          <div class="tech-title-badge">FULL-STACK &amp; AUTOMATION ARCHITECTURE</div>
+          <p class="tech-card-desc">
+            We architect end-to-end digital experiences that empower businesses to automate operations, scale infrastructure, and engage millions of users across modern web and mobile platforms.
+          </p>
+
+          <div class="tech-stack-pills">
+            <span class="tech-pill">React &amp; Next.js</span>
+            <span class="tech-pill">Node.js &amp; TypeScript</span>
+            <span class="tech-pill">Python &amp; AI</span>
+            <span class="tech-pill">Tailwind CSS</span>
+            <span class="tech-pill">PostgreSQL &amp; Redis</span>
+            <span class="tech-pill">Docker &amp; K8s</span>
+            <span class="tech-pill">AWS &amp; Cloudflare</span>
+          </div>
+
+          <div class="tech-contact-snippet">
+            <div class="tech-author-info">
+              <span style="font-size: 10px; color: #9CA3AF; text-transform: uppercase; letter-spacing: 1px;">Direct Lead Contact</span>
+              <span class="tech-author-name">M RIFQY FIMANDITYA</span>
+              <span class="tech-author-email">m.rifqy512@gmail.com</span>
+              <span style="font-size: 12px; color: #FFF; font-weight: bold;">+62 815 4611 8733</span>
+            </div>
+            <a href="https://wa.me/6281546118733?text=Hi%20Marmo%20Tech!%20Let's%20discuss%20a%20project." target="_blank" class="cta-btn-tech" style="padding: 10px 20px; font-size: 14px;">
+              <i class="fa-brands fa-whatsapp"></i> Chat WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       MARMO TECH! PORTFOLIO (THE 6 SPECIFIED PROJECTS)
+       1. Haho: Where Indonesia's Creatives Find Work that actually fits
+       2. Bank Promo (bankpromo.my.id)
+       3. TRANSFLYND: Fleet Management and Route Optimization
+       4. SAHABAT OUTLET REDESIGN: A PPOB APP FOR BILLS, CREDIT, E-WALLETS, AND HEALTH INSURANCE
+       5. Wright Partner (wright.partners)
+       6. Custom Birthday Web (rafiendra-birthday.vercel.app)
+       =================================================================== -->
+  <section class="tech-portfolio-section" id="techShowroom">
+    <div class="container">
+      <div class="section-header-center">
+        <div class="section-tag-pill" style="border-color: var(--tech-purple); background: rgba(115, 83, 186, 0.15);">
+          <span class="section-tag-text" style="color: var(--tech-purple-light);">⚡ SYSTEM &amp; PLATFORM SHOWCASE</span>
+        </div>
+        <h2 class="section-title">OUR TECH <span class="text-purple">WORKS &amp; SYSTEMS</span></h2>
+        <p class="section-desc">
+          Click on any project below to inspect the architectural breakdown, feature set, and live production deployment.
+        </p>
+      </div>
+
+      <!-- Tech Portfolio Grid (6 Projects) -->
+      <div class="tech-portfolio-grid">
+        <!-- 1. Haho -->
+        <article class="tech-project-card">
+          <div class="tech-card-thumb-wrap">
+            <img src="assets/images/portfolio/tech/haho.png" alt="Haho Platform Presentation" class="tech-card-thumb-img">
+          </div>
+          <div class="tech-card-body">
+            <span class="tech-card-cat-badge">01 / CREATIVE MARKETPLACE</span>
+            <h3 class="tech-card-title">Haho</h3>
+            <p class="tech-card-tagline">
+              Where Indonesia's Creatives Find Work that actually fits.
+            </p>
+            <p class="tech-card-desc">
+              Talent and opportunity scattered everywhere — Haho puts them in one place. Features Creator Profiles to see who they are, what they do, and why they're the right fit, paired with an upfront Book a Service engine with transparent pricing terms.
+            </p>
+            <div class="tech-card-footer">
+              <button class="view-case-btn" data-project="haho">
+                <span>View Case Presentation</span>
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- 2. Bank Promo -->
+        <article class="tech-project-card">
+          <div class="tech-card-thumb-wrap">
+            <img src="assets/images/portfolio/tech/bankpromo.png" alt="Bank Promo Platform Presentation" class="tech-card-thumb-img">
+          </div>
+          <div class="tech-card-body">
+            <span class="tech-card-cat-badge">02 / FINTECH &amp; AGGREGATOR</span>
+            <h3 class="tech-card-title">Bank Promo</h3>
+            <p class="tech-card-tagline">
+              All of the Nation's Promos, in One Place. Updated Daily.
+            </p>
+            <p class="tech-card-desc">
+              Over 1,600+ active banking, credit card, and e-wallet promos consolidated into a unified interactive calendar. Browse brands across Blibli, Shopee, Alfamart, and Cinema XXI with daily updates and smart recommendations — zero guesswork.
+            </p>
+            <div class="tech-card-footer">
+              <a href="https://bankpromo.my.id" target="_blank" class="tech-live-link">
+                <i class="fa-solid fa-globe"></i>
+                <span>bankpromo.my.id</span>
+              </a>
+              <button class="view-case-btn" data-project="bankpromo">
+                <span>View Case</span>
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- 3. TRANSFLYND -->
+        <article class="tech-project-card">
+          <div class="tech-card-thumb-wrap">
+            <img src="assets/images/portfolio/tech/transflynd.png" alt="TRANSFLYND TMS Presentation" class="tech-card-thumb-img">
+          </div>
+          <div class="tech-card-body">
+            <span class="tech-card-cat-badge">03 / FLEET TMS &amp; LOGISTICS</span>
+            <h3 class="tech-card-title">TRANSFLYND</h3>
+            <p class="tech-card-tagline">
+              Fleet Management and Route Optimization.
+            </p>
+            <p class="tech-card-desc">
+              A transport management system engineered to make fleet operations actually easy. Centralized Control Center manages orders and dispatches trucks with no spreadsheets required, powered by algorithmic route optimization ("Jarvis, find the best route").
+            </p>
+            <div class="tech-card-footer">
+              <button class="view-case-btn" data-project="transflynd">
+                <span>View Case Presentation</span>
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- 4. SAHABAT OUTLET REDESIGN -->
+        <article class="tech-project-card">
+          <div class="tech-card-thumb-wrap">
+            <img src="assets/images/portfolio/tech/sahabat_outlet.png" alt="Sahabat Outlet Redesign Presentation" class="tech-card-thumb-img">
+          </div>
+          <div class="tech-card-body">
+            <span class="tech-card-cat-badge">04 / RETAIL AGENT FINTECH</span>
+            <h3 class="tech-card-title">SAHABAT OUTLET REDESIGN</h3>
+            <p class="tech-card-tagline">
+              A PPOB APP FOR BILLS, CREDIT, E-WALLETS, AND HEALTH INSURANCE.
+            </p>
+            <p class="tech-card-desc">
+              Front-end modernization and workflow re-architecture for retail agents. Facilitates one-click bill settlement for PLN electricity, PDAM municipal water, and BPJS Kesehatan, alongside instant top-ups for 100+ digital providers and major e-wallets.
+            </p>
+            <div class="tech-card-footer">
+              <button class="view-case-btn" data-project="sahabat_outlet">
+                <span>View Case Presentation</span>
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- 5. Wright Partner -->
+        <article class="tech-project-card">
+          <div class="tech-card-thumb-wrap">
+            <img src="assets/images/portfolio/tech/wright_partner.png" alt="Wright Partner Presentation" class="tech-card-thumb-img">
+          </div>
+          <div class="tech-card-body">
+            <span class="tech-card-cat-badge">05 / VENTURE STUDIO PLATFORM</span>
+            <h3 class="tech-card-title">Wright Partner</h3>
+            <p class="tech-card-tagline">
+              A Company Profile for a Firm that Builds Sustainable, Investable Businesses.
+            </p>
+            <p class="tech-card-desc">
+              Built around Wright Partners' own mission of sustainable, risk-aligned growth. Highlights company strengths in venture co-building and presents research perspectives, white papers, and venture insights in a single clean corporate profile.
+            </p>
+            <div class="tech-card-footer">
+              <a href="https://wright.partners" target="_blank" class="tech-live-link">
+                <i class="fa-solid fa-globe"></i>
+                <span>wright.partners</span>
+              </a>
+              <button class="view-case-btn" data-project="wright_partner">
+                <span>View Case</span>
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- 6. Custom Birthday Web -->
+        <article class="tech-project-card">
+          <div class="tech-card-thumb-wrap">
+            <img src="assets/images/portfolio/tech/custom_birthday_web.png" alt="Custom Birthday Web Presentation" class="tech-card-thumb-img">
+          </div>
+          <div class="tech-card-body">
+            <span class="tech-card-cat-badge">06 / CREATIVE AI WEB APP</span>
+            <h3 class="tech-card-title">Custom Birthday Web</h3>
+            <p class="tech-card-tagline">
+              A Fully Custom Website Created to Celebrate a Friend's Birthday.
+            </p>
+            <p class="tech-card-desc">
+              Centered on a designer-driven theme celebrating Rafiendra's 24th birthday. The site features personalized interactive widgets, flower bouquet unboxing, and an AI Chatbot ("Chat with Your Design Mentor") alongside an AI Creative Forecast report.
+            </p>
+            <div class="tech-card-footer">
+              <a href="https://rafiendra-birthday.vercel.app" target="_blank" class="tech-live-link">
+                <i class="fa-solid fa-globe"></i>
+                <span>rafiendra-birthday.vercel.app</span>
+              </a>
+              <button class="view-case-btn" data-project="custom_birthday_web">
+                <span>View Case</span>
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       CONTACT US (MAGIC BANNER)
+       =================================================================== -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <div class="contact-magic-banner" style="border-color: var(--tech-purple-light); background: linear-gradient(135deg, rgba(22, 18, 38, 0.95) 0%, rgba(35, 27, 60, 0.9) 100%);">
+        <div class="banner-tagline-pre" style="color: var(--tech-gold);">✦ READY TO BUILD SOMETHING BIG?</div>
+        <h2 class="banner-main-headline">
+          WE HAD FUN, <span class="orange-highlight" style="color: var(--tech-gold);">LEAVE A MARK.</span><br>
+          NO FLUFF, JUST MAGIC.
+        </h2>
+        <p class="banner-sub-text">
+          Need a high-performance web platform, API backbone, or scalable system? Drop your business email below, and our engineering team will get in touch immediately.
+        </p>
+
+        <!-- CTA Form to Input Email -->
+        <form class="contact-cta-form" id="magicContactForm" style="border-color: rgba(115, 83, 186, 0.5);">
+          <input type="email" class="contact-email-input" placeholder="Enter your business email address..." required aria-label="Your email address">
+          <button type="submit" class="contact-submit-btn" style="background: linear-gradient(135deg, var(--tech-gold), #E09C00); color: #0D0A24;">
+            <span>Let's Build Magic</span>
+            <i class="fa-solid fa-bolt"></i>
+          </button>
+        </form>
+
+        <!-- Direct Contact Chips -->
+        <div class="direct-contact-chips">
+          <a href="mailto:m.rifqy512@gmail.com" class="contact-chip" style="border-color: rgba(115, 83, 186, 0.4);">
+            <i class="fa-solid fa-envelope" style="color: var(--tech-gold);"></i>
+            <span>m.rifqy512@gmail.com</span>
+          </a>
+          <a href="https://wa.me/6281546118733" target="_blank" class="contact-chip" style="border-color: rgba(37, 211, 102, 0.4);">
+            <i class="fa-brands fa-whatsapp" style="color: #25D366;"></i>
+            <span>+62 815 4611 8733</span>
+          </a>
+          <span class="contact-chip" style="background: rgba(115, 83, 186, 0.15); border-color: var(--tech-purple-light);">
+            <i class="fa-solid fa-location-dot" style="color: var(--tech-gold);"></i>
+            <span>Ulujami Street No. 57, South Jakarta</span>
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       FOOTER INFORMATION
+       =================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <!-- Brand Info -->
+        <div class="footer-brand-column">
+          <div class="footer-logo-title">
+            <img src="assets/images/sprites/marmo_icon_new.png" alt="Marmo" style="width: 40px; height: 40px; object-fit: contain;">
+            <span>MARMO!</span>
+          </div>
+          <p class="footer-brand-desc">
+            Creative Production House &amp; Tech Studio based in South Jakarta. Leave a mark. No fluff, just magic.
+          </p>
+          <div class="footer-address-box">
+            <i class="fa-solid fa-map-pin"></i>
+            <span><strong>Marmo! Headquarters</strong><br>Ulujammin Street No. 57, South Jakarta, Indonesia</span>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-nav-list">
+            <li><a href="index.html" class="footer-nav-link">Home</a></li>
+            <li><a href="index.html#about" class="footer-nav-link">About Us</a></li>
+            <li><a href="index.html#services" class="footer-nav-link">What We Serve</a></li>
+            <li><a href="index.html#team" class="footer-nav-link">Marmo People!</a></li>
+            <li><a href="creative.html" class="footer-nav-link" style="color: var(--color-orange);">Marmo Creative! Showroom</a></li>
+            <li><a href="tech.html" class="footer-nav-link" style="color: var(--tech-purple-light);">Marmo Tech! Division</a></li>
+            <li><a href="#contact" class="footer-nav-link">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Services -->
+        <div>
+          <h4 class="footer-col-title">What We Serve</h4>
+          <ul class="footer-nav-list">
+            <li><a href="index.html#services" class="footer-nav-link">Company Profile Video</a></li>
+            <li><a href="index.html#services" class="footer-nav-link">Graphic Design &amp; Brand</a></li>
+            <li><a href="index.html#services" class="footer-nav-link">Long &amp; Short Video Editing</a></li>
+            <li><a href="index.html#services" class="footer-nav-link">AI Imaginary Generation</a></li>
+            <li><a href="tech.html" class="footer-nav-link">System &amp; Web Applications</a></li>
+          </ul>
+        </div>
+
+        <!-- Connect & Social Icons -->
+        <div>
+          <h4 class="footer-col-title">Connect With Us</h4>
+          <p style="font-size: 13px; color: var(--text-sub); margin-bottom: 14px;">
+            Follow our latest productions or chat directly on WhatsApp.
+          </p>
+          <div class="footer-social-group">
+            <a href="https://wa.me/6281546118733" target="_blank" class="social-icon-btn whatsapp" aria-label="Contact Marmo on WhatsApp">
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+            <a href="https://www.linkedin.com" target="_blank" class="social-icon-btn linkedin" aria-label="Visit Marmo on LinkedIn">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="https://instagram.com" target="_blank" class="social-icon-btn instagram" aria-label="Visit Marmo on Instagram">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://youtube.com" target="_blank" class="social-icon-btn" style="background: #18123C;" aria-label="Visit Marmo on YouTube">
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+          </div>
+          <div style="margin-top: 18px; font-size: 12px; color: var(--text-muted);">
+            Direct Phone: <a href="tel:+6281546118733" style="color: var(--color-orange); text-decoration: none; font-weight: bold;">+62 815 4611 8733</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom Copyright Bar -->
+      <div class="footer-bottom-bar">
+        <div>
+          &copy; 2026 <strong>MARMO PRODUCTION HOUSE</strong>. All rights reserved.
+        </div>
+        <div>
+          Built with <span style="color: var(--tech-gold);">⚡</span> and magic in South Jakarta.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===================================================================
+       MODAL: PROJECT CASE STUDY LIGHTBOX
+       =================================================================== -->
+  <div class="modal-overlay" id="projectModal">
+    <div class="modal-card-box" style="border-color: var(--tech-purple-light); max-width: 780px;">
+      <button class="modal-close-btn" aria-label="Close Case Study Modal">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <div class="modal-body">
+        <div style="display: flex; gap: 8px; margin-bottom: 12px; flex-wrap: wrap;">
+          <span id="modalFormat" class="port-format-badge" style="position: static; border-color: var(--tech-purple-light); color: var(--tech-gold);">FORMAT</span>
+          <span id="modalYear" class="port-year-badge" style="position: static;">YEAR</span>
+        </div>
+        <h2 id="modalTitle" class="comic-title" style="font-size: 26px; color: #FFF; margin-bottom: 6px;">Project Title</h2>
+        <h4 id="modalClient" style="font-size: 14px; color: var(--tech-purple-light); margin-bottom: 20px;">Client Name</h4>
+
+        <div style="width: 100%; height: 320px; background: #0A0815; border-radius: var(--radius-md); overflow: hidden; margin-bottom: 24px; border: 1.5px solid rgba(115, 83, 186, 0.4);">
+          <img id="modalImg" src="" alt="Project Showcase" style="width: 100%; height: 100%; object-fit: contain;">
+        </div>
+
+        <h4 style="font-family: var(--font-display); font-size: 16px; color: #FFF; margin-bottom: 8px;">About The System / Project</h4>
+        <p id="modalDesc" style="font-size: 14px; color: var(--text-sub); line-height: 1.7; margin-bottom: 20px;">
+          Project description...
+        </p>
+
+        <h4 style="font-family: var(--font-display); font-size: 16px; color: #FFF; margin-bottom: 8px;">Key Features &amp; Architecture</h4>
+        <ul id="modalDeliverables" style="font-size: 14px; color: var(--text-sub); line-height: 1.7; padding-left: 20px; margin-bottom: 28px;">
+        </ul>
+
+        <div style="display: flex; gap: 12px; justify-content: flex-end; flex-wrap: wrap;">
+          <a href="#contact" class="cta-btn-tech" style="padding: 10px 24px; font-size: 14px;" onclick="document.getElementById('projectModal').classList.remove('active'); document.body.style.overflow='';">
+            Build Similar System
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Message -->
+  <div class="toast-notification" id="toastNotification">
+    Notification text here
+  </div>
+
+  <!-- Main JavaScript File -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

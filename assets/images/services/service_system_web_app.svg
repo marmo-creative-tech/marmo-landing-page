@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" fill="none">
+  <defs>
+    <linearGradient id="sysGrad" x1="0" y1="0" x2="400" y2="240" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#24194F" />
+      <stop offset="100%" stop-color="#0E0B22" />
+    </linearGradient>
+    <linearGradient id="codeGlow" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#9B7AE8" />
+      <stop offset="100%" stop-color="#7353BA" />
+    </linearGradient>
+    <linearGradient id="goldGlow" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFD13B" />
+      <stop offset="100%" stop-color="#FF9E1B" />
+    </linearGradient>
+    <linearGradient id="screenGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1E193C" />
+      <stop offset="100%" stop-color="#110E28" />
+    </linearGradient>
+    <filter id="sysGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="400" height="240" rx="16" fill="url(#sysGrad)" />
+  <circle cx="90" cy="50" r="110" fill="#7353BA" fill-opacity="0.15" filter="url(#sysGlow)" />
+  <circle cx="320" cy="190" r="95" fill="#FF9E1B" fill-opacity="0.12" filter="url(#sysGlow)" />
+
+  <!-- Orbit Planetary Rings -->
+  <ellipse cx="200" cy="120" rx="160" ry="60" stroke="#7353BA" stroke-opacity="0.35" stroke-dasharray="4 6" />
+  <ellipse cx="200" cy="120" rx="115" ry="40" stroke="#FF9E1B" stroke-opacity="0.3" />
+
+  <!-- Orbit Planets -->
+  <circle cx="340" cy="100" r="8" fill="url(#goldGlow)" />
+  <circle cx="65" cy="135" r="6" fill="#38BDF8" />
+
+  <!-- Main System / Web Application Window -->
+  <g transform="translate(60, 32)">
+    <!-- Browser Window Shadow -->
+    <rect x="0" y="0" width="230" height="155" rx="12" fill="url(#screenGrad)" stroke="#7353BA" stroke-width="2.5" />
+    
+    <!-- Top Bar -->
+    <rect x="0" y="0" width="230" height="26" rx="10" fill="#14102E" />
+    <circle cx="14" cy="13" r="3.5" fill="#EF4444" />
+    <circle cx="26" cy="13" r="3.5" fill="#F59E0B" />
+    <circle cx="38" cy="13" r="3.5" fill="#10B981" />
+    <rect x="55" y="6" width="100" height="14" rx="7" fill="#241E4F" />
+    <text x="75" y="17" fill="#9B7AE8" font-family="'Plus Jakarta Sans', sans-serif" font-size="8" font-weight="600">marmo.tech/app</text>
+
+    <!-- Code Editor UI Mockup -->
+    <text x="18" y="48" fill="#38BDF8" font-family="'Outfit', monospace" font-size="11" font-weight="700">const</text>
+    <text x="56" y="48" fill="#FFD13B" font-family="'Outfit', monospace" font-size="11" font-weight="700">magicEngine</text>
+    <text x="135" y="48" fill="#FFF" font-family="'Outfit', monospace" font-size="11">=</text>
+    <text x="148" y="48" fill="#9B7AE8" font-family="'Outfit', monospace" font-size="11">launchApp({</text>
+    
+    <text x="28" y="68" fill="#CBD5E1" font-family="'Outfit', monospace" font-size="10">speed:</text>
+    <text x="72" y="68" fill="#34D399" font-family="'Outfit', monospace" font-size="10">'100/100'</text>
+    <text x="120" y="68" fill="#CBD5E1" font-family="'Outfit', monospace" font-size="10">,</text>
+    
+    <text x="28" y="86" fill="#CBD5E1" font-family="'Outfit', monospace" font-size="10">zeroFluff:</text>
+    <text x="88" y="86" fill="#FF9E1B" font-family="'Outfit', monospace" font-size="10">true</text>
+    <text x="114" y="86" fill="#CBD5E1" font-family="'Outfit', monospace" font-size="10">,</text>
+
+    <text x="28" y="104" fill="#CBD5E1" font-family="'Outfit', monospace" font-size="10">scale:</text>
+    <text x="68" y="104" fill="#38BDF8" font-family="'Outfit', monospace" font-size="10">'infinite'</text>
+
+    <text x="18" y="124" fill="#9B7AE8" font-family="'Outfit', monospace" font-size="11">});</text>
+
+    <!-- Status Bar -->
+    <rect x="15" y="134" width="200" height="12" rx="4" fill="#130F2A" />
+    <circle cx="23" cy="140" r="2.5" fill="#10B981" />
+    <text x="32" y="143" fill="#10B981" font-family="'Plus Jakarta Sans', sans-serif" font-size="7" font-weight="700">SYSTEM HEALTH: OPTIMAL (0 DOWNTIME)</text>
+  </g>
+
+  <!-- Overlapping Mobile Phone Mockup -->
+  <g transform="translate(245, 75)">
+    <rect x="0" y="0" width="85" height="135" rx="16" fill="#0B0918" stroke="#FF9E1B" stroke-width="2.5" />
+    <!-- Dynamic Island / Speaker -->
+    <rect x="28" y="6" width="29" height="5" rx="2.5" fill="#241E4F" />
+    <!-- Phone Screen Content -->
+    <rect x="6" y="18" width="73" height="106" rx="10" fill="#171336" />
+    
+    <!-- Mini App Header -->
+    <circle cx="18" cy="30" r="5" fill="#FF9E1B" />
+    <rect x="28" y="27" width="38" height="6" rx="3" fill="#9B7AE8" />
+    
+    <!-- Mini Metric Cards -->
+    <rect x="11" y="42" width="63" height="26" rx="6" fill="#261E58" stroke="#7353BA" stroke-width="1" />
+    <text x="16" y="54" fill="#CBD5E1" font-family="'Plus Jakarta Sans', sans-serif" font-size="6" font-weight="600">LIVE USERS</text>
+    <text x="16" y="64" fill="#FFD13B" font-family="'Outfit', sans-serif" font-size="8" font-weight="800">42,850 +</text>
+
+    <!-- Action Button -->
+    <rect x="11" y="74" width="63" height="16" rx="5" fill="url(#goldGlow)" />
+    <text x="21" y="85" fill="#0D0A24" font-family="'Outfit', sans-serif" font-size="7" font-weight="900">⚡ DEPLOY</text>
+
+    <!-- Pulse Signal -->
+    <circle cx="42" cy="106" r="8" fill="#38BDF8" fill-opacity="0.2" />
+    <circle cx="42" cy="106" r="4" fill="#38BDF8" />
+  </g>
+
+  <!-- Floating Sparkles -->
+  <path d="M 50 180 L 53 188 L 61 191 L 53 194 L 50 202 L 47 194 L 39 191 L 47 188 Z" fill="#FFD13B" />
+  <path d="M 350 40 L 352 46 L 358 48 L 352 50 L 350 56 L 348 50 L 342 48 L 348 46 Z" fill="#9B7AE8" />
+</svg>

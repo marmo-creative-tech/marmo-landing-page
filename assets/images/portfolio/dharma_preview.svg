@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 320" fill="none">
+  <defs>
+    <linearGradient id="dharmaBg" x1="0" y1="0" x2="480" y2="320" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#191544" />
+      <stop offset="100%" stop-color="#0E0B28" />
+    </linearGradient>
+    <linearGradient id="videoScreen" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1E293B" />
+      <stop offset="100%" stop-color="#0F172A" />
+    </linearGradient>
+    <linearGradient id="industrialGold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F59E0B" />
+      <stop offset="100%" stop-color="#B45309" />
+    </linearGradient>
+  </defs>
+
+  <rect width="480" height="320" rx="16" fill="url(#dharmaBg)" />
+
+  <!-- Video Monitor / Industrial Showcase Frame -->
+  <g transform="translate(45, 30)">
+    <!-- Main Screen -->
+    <rect width="390" height="235" rx="12" fill="url(#videoScreen)" stroke="#F59E0B" stroke-width="2.5" />
+    
+    <!-- Video Player Header -->
+    <rect width="390" height="28" rx="12" fill="#0A0F1D" />
+    <circle cx="16" cy="14" r="4" fill="#EF4444" />
+    <circle cx="28" cy="14" r="4" fill="#F59E0B" />
+    <circle cx="40" cy="14" r="4" fill="#10B981" />
+    <text x="58" y="18" fill="#F8FAFC" font-family="'Outfit', sans-serif" font-size="10" font-weight="700">DHARMA PRECISION TOOLS — COMPANY PROFILE (4K)</text>
+    <rect x="320" y="7" width="55" height="14" rx="7" fill="#EF4444" />
+    <text x="332" y="17" fill="#FFFFFF" font-family="'Outfit', sans-serif" font-size="8" font-weight="bold">● LIVE 4K</text>
+
+    <!-- Industrial Press Machine Illustration & Layout -->
+    <g transform="translate(15, 38)">
+      <!-- Left: Heavy Press Machine -->
+      <rect width="185" height="150" rx="8" fill="#1E293B" stroke="#475569" stroke-width="1.5" />
+      <!-- Machine Pillars -->
+      <rect x="25" y="20" width="22" height="110" rx="4" fill="#334155" />
+      <rect x="138" y="20" width="22" height="110" rx="4" fill="#334155" />
+      <!-- Heavy Crossbeam / Press Head -->
+      <rect x="15" y="35" width="155" height="38" rx="6" fill="url(#industrialGold)" stroke="#78350F" stroke-width="1.5" />
+      <text x="32" y="58" fill="#FFFFFF" font-family="'Lilita One', sans-serif" font-size="14">500T &amp; 300T</text>
+      <text x="32" y="69" fill="#FEF3C7" font-family="'Outfit', sans-serif" font-size="8" font-weight="bold">HEAVY PRESS MACHINE</text>
+      <!-- Base & sparks -->
+      <rect x="15" y="115" width="155" height="20" rx="4" fill="#0F172A" />
+      <circle cx="92" cy="100" r="12" fill="#F59E0B" opacity="0.3" />
+      <polygon points="90,95 95,100 88,105 100,102" fill="#FDE047" />
+    </g>
+
+    <!-- Right Side: Product Segments, Dies & Vision -->
+    <g transform="translate(210, 38)">
+      <!-- Segment 1: Dies & Tooling -->
+      <rect width="165" height="68" rx="8" fill="#1E293B" stroke="#38BDF8" stroke-width="1" />
+      <rect x="12" y="10" width="50" height="48" rx="4" fill="#0F172A" />
+      <circle cx="37" cy="34" r="15" fill="#0284C7" opacity="0.4" />
+      <rect x="70" y="14" width="85" height="12" rx="4" fill="#0284C7" />
+      <text x="76" y="23" fill="#FFFFFF" font-family="'Outfit', sans-serif" font-size="8" font-weight="bold">PRODUCT: DIES</text>
+      <rect x="70" y="32" width="75" height="4" rx="2" fill="#94A3B8" />
+      <rect x="70" y="40" width="60" height="4" rx="2" fill="#94A3B8" />
+      <rect x="70" y="48" width="80" height="4" rx="2" fill="#38BDF8" />
+
+      <!-- Segment 2: Collaborators (Honda, Toyota, Yamaha) -->
+      <rect y="78" width="165" height="72" rx="8" fill="#1E293B" stroke="#10B981" stroke-width="1" />
+      <text x="12" y="94" fill="#10B981" font-family="'Outfit', sans-serif" font-size="9" font-weight="bold">KEY PARTNERS / CLIENTS</text>
+      <g transform="translate(12, 102)">
+        <rect x="0" y="0" width="42" height="22" rx="4" fill="#0F172A" stroke="#475569" stroke-width="1" />
+        <text x="4" y="14" fill="#FFFFFF" font-family="'Outfit', sans-serif" font-size="7" font-weight="bold">HONDA</text>
+        <rect x="48" y="0" width="44" height="22" rx="4" fill="#0F172A" stroke="#475569" stroke-width="1" />
+        <text x="52" y="14" fill="#FFFFFF" font-family="'Outfit', sans-serif" font-size="7" font-weight="bold">TOYOTA</text>
+        <rect x="98" y="0" width="44" height="22" rx="4" fill="#0F172A" stroke="#475569" stroke-width="1" />
+        <text x="102" y="14" fill="#FFFFFF" font-family="'Outfit', sans-serif" font-size="7" font-weight="bold">YAMAHA</text>
+      </g>
+    </g>
+
+    <!-- Video Play Bar Bottom -->
+    <g transform="translate(15, 200)">
+      <circle cx="10" cy="12" r="10" fill="#F59E0B" />
+      <polygon points="8,8 14,12 8,16" fill="#0F172A" />
+      <rect x="30" y="9" width="310" height="6" rx="3" fill="#334155" />
+      <rect x="30" y="9" width="160" height="6" rx="3" fill="#F59E0B" />
+      <circle cx="190" cy="12" r="6" fill="#FFFFFF" stroke="#F59E0B" stroke-width="2" />
+      <text x="350" y="15" fill="#94A3B8" font-family="'Outfit', sans-serif" font-size="9">03:45 / 05:20</text>
+    </g>
+  </g>
+
+  <!-- Tag Pill -->
+  <g transform="translate(24, 275)">
+    <rect width="105" height="28" rx="14" fill="#F59E0B" stroke="#000000" stroke-width="1.5" />
+    <text x="16" y="18" fill="#120E2E" font-family="'Lilita One', sans-serif" font-size="12">VIDEO · 2024</text>
+  </g>
+</svg>
