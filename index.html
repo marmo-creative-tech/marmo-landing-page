@@ -10,7 +10,7 @@
   <link rel="icon" type="image/png" href="assets/images/sprites/marmo_icon_new.png">
 
   <!-- Core Stylesheet -->
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/style.css?v=2.2">
 
   <!-- Font Awesome Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -45,9 +45,9 @@
         </ul>
       </nav>
 
-      <!-- Right Actions: Business Switcher Pill + CTA Button -->
-      <div class="header-actions-group">
-        <div class="business-toggle-pill" id="bizTogglePill">
+      <!-- Right Actions: Business Switcher Pill + CTA Button (Strictly Beside Each Other) -->
+      <div class="header-actions-group" style="display: flex !important; flex-direction: row !important; align-items: center !important; gap: 12px !important; flex-wrap: nowrap !important; flex-shrink: 0 !important;">
+        <div class="business-toggle-pill" id="bizTogglePill" style="flex-shrink: 0 !important;">
           <a href="creative.html" class="biz-btn creative-btn" id="btnMarmoCreative" aria-label="Explore Marmo Creative Showroom">
             <span>🎨</span> Marmo Creative!
           </a>
@@ -56,7 +56,7 @@
           </a>
         </div>
 
-        <a href="#contact" class="header-cta-btn">Let's Talk Magic</a>
+        <a href="#contact" class="header-cta-btn" style="flex-shrink: 0 !important; white-space: nowrap !important;">Let's Talk Magic</a>
       </div>
 
       <!-- Mobile Hamburger Button -->
